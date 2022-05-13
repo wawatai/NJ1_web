@@ -4,111 +4,150 @@
     margin-bottom: 30px;
 
     .center {
-        width: 1400px;
+        max-width: 1650px;
         height: auto;
         margin: 0 auto;
 
-        //跑馬燈
-        .marqueeArea {
-            width: 100%;
-            height: 40px;
-            background: $marquee_BG;
-            border-radius: 25px;
-            margin: 18px 0 60px;
-            border: solid 1px $marquee_Border;
+        //快速選擇
+        .quickBox {
+            width: auto;
+            height: auto;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
 
-            .center {
-                width: 100%;
-                height: 100%;
+            li {
+                width: auto;
+                height: auto;
+                margin: 0 10px;
 
-                .marqueeWrap {
-                    width: 100%;
-                    height: 100%;
+                &.love {
+                    display: none;
+
+                    &.display {
+                        display: block;
+                    }
+                }
+
+                &:hover,&:active,&.active {
+                    
+                    button {
+                        transform: rotateY(-90deg);
+
+                        .inner {
+                            opacity: 1;
+                            transform: rotateY(90deg);
+                            transition: 0.5s all;
+                            transition-delay: 0.2s;
+                        }
+                    }
+                }
+                
+                button {
                     display: flex;
+                    justify-content: center;
                     align-items: center;
-                    justify-content: flex-end;
+                    flex-direction: column;
+                    background: $quick_BG;
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 8px;
+                    transition: all .2s;
+                    transform-style: preserve-3d;
+                    transform-origin: bottom;
                     position: relative;
+                    cursor: pointer;
 
-                    &::before,&::after {
-                        content: "";
+                    i {
+                        display: block;
+                        width: 50px;
+                        height: 50px;
+                        margin-bottom: 25px;
+
+                        &.love_ic {
+                            background-position-x: 0;
+                        }
+                        &.sport_ic {
+                            background-position-x: 20%;
+                        }
+                        &.live_ic {
+                            background-position-x: 40%;
+                        }
+                        &.slot_ic {
+                            background-position-x: 60%;
+                        }
+                        &.fish_ic {
+                            background-position-x: 80%;
+                        }
+                        &.board_ic {
+                            background-position-x: 100%;
+                        }
+                    }
+
+                    p {
+                        color: $quick_Word;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+
+                    .inner {
                         position: absolute;
-                        width: 49px;
-                        height: 71px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                    }
-                    &::before {
-                        left: -20px;
-                        transform: scaleX(-1) translateY(-50%);
-                        z-index: 1;
-                    }
-                    &::after {
-                        right: -20px;
-                    }
+                        left: 0;
+                        bottom: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        background: linear-gradient(180deg,#ff9b00 0,#ffb600);
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 8px;
+                        opacity: 0;
 
-                    .marquee_ic {
-                        width: 65px;
-                        height: 65px;
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        left: 6px;
-                        z-index: 1;
-                    }
-
-                    .marquee {
-                        width: 98%;
-                        height: auto;
-                        overflow: hidden;
-
-                        p {
-                            font-size: 14px;
-                            font-weight: bold;
-                            color: $marquee_Word;
-                            display: inline-block;
-                            animation: marquee 10s linear infinite;
-                            padding-left: 100%;
-                            white-space: nowrap;
+                        i {
+                            background-position-y: 100%;
                         }
 
-                        @keyframes marquee {
-                            0% {
-                                transform: translate(0%);
-                            }
-
-                            100% {
-                                transform: translate(-100%);
-                            }
+                        p {
+                            color: $quick_Hover;
                         }
                     }
                 }
             }
         }
 
-        //中間選單
+        //遊戲平台選單
         .typeList {
-            width: 100%;
+            max-width: 1650px;
+            min-width: 1400px;
             height: auto;
-            display: flex;
-            flex-wrap: wrap;
+            margin: 40px 0 60px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            grid-gap: 60px 20px;
 
             li {
                 width: auto;
                 height: auto;
-                margin: 0 16px 16px 0;
                 position: relative;
                 cursor: pointer;
+                display: none;
+
+                &.display {
+                    display: block;
+                }
 
                 &:nth-of-type(4n) {
                     margin-right: 0px;
                 }
 
                 p {
-                    color: $mainFont_1;
+                    color: $type_Word;
                     width: 100%;
                     text-align: center;
-                    font-size: 26px;
+                    font-size: 16px;
                     font-weight: bold;
+                    padding-top: 10px;
                 }
 
                 .fixBox {
@@ -121,9 +160,8 @@
                     align-items: center;
                     justify-content: center;
                     flex-direction: column;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
+                    top: 0;
+                    left: 0;
                     cursor: not-allowed;
 
                     &.display {
@@ -131,7 +169,7 @@
                     }
 
                     p {
-                        color: $mainFont_2;
+                        color: $topGameList_fixWord;
                         font-size: 14px;
                         font-weight: bold;
                         line-height: 24px;

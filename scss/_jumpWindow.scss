@@ -15,12 +15,12 @@
     }
 
     .jumpWindow {
-        width: 480px;
+        width: auto;
         height: auto;
-        background: $mainBG_1;
-        border-radius: 5px;
+        background: $jumpWindow_BG;
+        border-radius: 16px;
         overflow: hidden;
-        border: solid 1px $mainBorder_2;
+        border: solid 1px $jumpWindow_Border;
 
         //忘記密碼
         &.forgetPassword {
@@ -34,27 +34,26 @@
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                padding: 24px;
     
                 input {
-                    width: 322px;
+                    width: 532px;
                     height: 42px;
-                    margin-top: 20px;
                     @include mainInput;
-                    padding: 0;
-                    text-align: center;
+                    margin-bottom: 16px;
                 }
     
                 button {
-                    width: 322px;
+                    width: 532px;
                     height: 42px;
-                    margin-top: 15px;
                     @include mainBtn;
+                    margin-bottom: 24px;
                 }
     
                 p {
-                    font-size: 14px;
-                    margin: 30px 0;
                     color: $remind;
+                    font-size: 14px;
+                    font-weight: bold;
                 }
             }
         }
@@ -70,45 +69,25 @@
                 display: block;
             }
 
+            //頁籤
             .nav {
-                margin: 8px 15px;
-                border-bottom: solid 1px $mainBorder_1;
                 display: flex;
+                border-bottom: solid 1px $mainBorder_1;
+                margin: 20px 20px 0;
 
                 li {
-                    position: relative;
-                    height: 33px;
-                    font-size: 16px;
-                    font-weight: bold;
-                    letter-spacing: 2px;
-                    padding: 0 40px;
-                    cursor: pointer;
-                    border-bottom: solid 3px transparent;
-                    color: $choose_Word;
-                    display: flex;
-                    align-items: center;
-
-                    &:hover,&:active,&.active {
-                        color: $choose_Active;
-                        border-color: $choose_Border;
-                    }
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        width: 2px;
-                        height: 15px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        right: -1px;
-                        background: $mainBorder_1;
-                    }
+                    width: auto;
+                    height: auto;
+                    @include grayBtn;
+                    margin-right: 7px;
+                    padding: 5px 20px;
                 }
             }
 
+            //內容
             .content {
                 display: none;
-                margin: 0px 15px 20px;
+                margin: 0px 20px 30px;
 
                 &.display {
                     display: block;
@@ -121,6 +100,7 @@
                     display: flex;
                     align-items: center;
                     border-bottom: solid 1px $mainBorder_1;
+                    box-sizing: border-box;
 
                     div {
                         width: 100%;
@@ -142,7 +122,7 @@
                             }
 
                             &.date {
-                                color: $title_Time;
+                                color: $time;
                                 font-size: 14px;
                             }
                         }
@@ -162,7 +142,7 @@
             .content {
                 color: $mainFont_1;
                 font-size: 16px;
-                padding: 24px 80px;
+                padding: 32px;
                 letter-spacing: 1px;
                 font-weight: bold;
                 text-align: center;
@@ -170,10 +150,10 @@
 
             .btnBox {
                 text-align: center;
-                padding: 20px 0;
+                margin: 0 32px 20px;
 
                 button {
-                    width: 322px;
+                    width: 278px;
                     height: 42px;
                     @include mainBtn;
                 }
@@ -189,12 +169,13 @@
             }
 
             form {
+                padding: 0 24px;
                 
                 .content {
                     width: 100%;
                     height: auto;
                     box-sizing: border-box;
-                    padding: 24px 80px;
+                    padding: 24px 0;
 
                     li {
                         width: 100%;
@@ -209,7 +190,7 @@
                     input {
                         width: 100%;
                         height: 42px;
-                        @include mainInput
+                        @include headerInput
                     }
                 }
 
@@ -235,17 +216,20 @@
             }
 
             form {
+                padding: 0 24px;
                 
                 .content {
                     width: 100%;
                     height: auto;
                     box-sizing: border-box;
-                    padding: 24px 80px;
+                    padding: 24px 0;
+                    display: flex;
+                    justify-content: center;
 
                     li {
                         width: 100%;
                         height: auto;
-                        margin-bottom: 30px;
+                        margin-bottom: 10px;
                         font-size: 14px;
                         font-weight: bold;
                         color: $mainFont_1;
@@ -257,21 +241,19 @@
                         }
 
                         button {
+                            display: block;
                             width: auto;
-                            height: 30px;
-                            @include borderBtn;
-                            padding: 0 5px;
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            right: 6px;
+                            height: auto;
+                            @include footerBtn;
+                            margin-top: 8px;
+                            padding: 5px 10px;
                         }
                     }
 
                     input {
-                        width: 100%;
+                        width: 345px;
                         height: 42px;
-                        @include mainInput;
+                        @include headerInput;
                     }
                 }
 
@@ -280,13 +262,12 @@
                     text-align: center;
 
                     button {
-                        width: 322px;
+                        width: 345px;
                         height: 42px;
                         @include mainBtn
                     }
 
                     .remind {
-                        text-align: center;
                         width: 100%;
                         margin-top: 20px;
                         font-size: 15px;
@@ -307,56 +288,82 @@
             }
 
             .content {
-                padding: 20px;
+                padding: 24px;
 
                 .num {
-                    color: $title_2;
+                    color: $mainFont_1;
                     font-weight: bold;
                     font-size: 16px;
                     letter-spacing: 1px;
-                    margin-bottom: 15px;
                 }
 
                 table {
                     width: 100%;
                     height: auto;
-                    box-shadow: 0 0 0 1px $mainBorder_1;
-                    border-right: 5px;
-
+                    border: solid 1px $fakeTable_border;
+                    background: $fakeTable_BG;
+                    margin-top: 24px;
+    
                     tr {
-
+    
                         &:last-child {
-
+    
                             td {
                                 border: none;
                             }
                         }
-
+    
                         th {
-                            height: 40px;
+                            height: 36px;
                             vertical-align: middle;
-                            border-bottom: solid 2px $mainBorder_2;
-
+                            border-bottom: solid 2px $fakeTable_TitleBorder;
+    
+                            &:last-child {
+    
+                                p {
+                                    border: none;
+                                }
+                            }
+    
                             p {
+                                width: 100%;
                                 font-size: 14px;
                                 font-weight: bold;
-                                color: $title_1;
+                                color: $fakeTable_Word;
+                                border-right: solid 1px $fakeTable_border;
+                                text-align: center;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
                             }
                         }
-
+    
                         td {
-                            height: 40px;
+                            width: 10%;
+                            height: 50px;
                             vertical-align: middle;
-                            border-bottom: solid 1px $mainBorder_1;
-
+                            border-bottom: solid 1px $fakeTable_border;
+    
+                            &:last-child {
+    
+                                p {
+                                    border: none;
+                                }
+                            }
+    
                             p {
-                                text-align: center;
+                                width: 100%;
                                 font-size: 14px;
                                 font-weight: bold;
-                                color: $mainFont_1;
+                                color: $fakeTable_Word;
+                                border-right: solid 1px $fakeTable_border;
+                                text-align: center;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
 
-                                &.sp {
-                                    color: $remind;
+                                &.money {
+                                    color: $mainFont_3;
                                 }
                             }
                         }
@@ -448,14 +455,17 @@
                         height: auto;
                         font-size: 28px;
                         font-weight: bold;
-                        color: $title_1;
+                        color: $mainFont_1;
                     }
 
                     p {
                         width: 120px;
                         font-size: 16px;
                         font-weight: bold;
-                        color: $title_2;
+                        color: $mainFont_3;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                     }
 
                     input {
@@ -491,7 +501,7 @@
                     .check {
                         width: 267px;
                         height: 42px;
-                        @include fastCheck;
+                        @include mainBtn;
                         margin-bottom: 20px;
                     }
                 }
@@ -632,10 +642,25 @@
                 margin: 28px auto;
                 overflow-y: auto;
 
+                &::-webkit-scrollbar {
+                    width: 8px;
+                    height: 8px;
+                }
+        
+                &::-webkit-scrollbar-thumb {
+                    background: $scrollBar_thumb;
+                    border-radius: 10px;
+                }
+        
+                &::-webkit-scrollbar-track {
+                    background: $scrollBar_track;
+                    border-radius: 10px;
+                }
+
                 .smallTitle {
                     margin: 40px 0;
-                    color: $title_2;
-                    font-size: 24px;
+                    color: $mainFont_1;
+                    font-size: 16px;
                     font-weight: bold;
                     letter-spacing: 1px;
 
@@ -645,8 +670,8 @@
                 }
 
                 p:not(.smallTitle) {
-                    color: $mainFont_1;
-                    font-size: 16px;
+                    color: $mainFont_2;
+                    font-size: 13px;
                     font-weight: bold;
                     line-height: 22px;
                     letter-spacing: 1px;
@@ -710,8 +735,8 @@
             position: relative;
 
             p {
-                color: $title_1;
-                font-size: 16px;
+                color: $jumpWindow_Title;
+                font-size: 18px;
                 font-weight: bold;
                 text-align: center;
                 width: 100%;
@@ -720,8 +745,8 @@
 
             i {
                 position: absolute;
-                width: 18px;
-                height: 18px;
+                width: 16px;
+                height: 16px;
                 top: 50%;
                 right: 15px;
                 transform: translateY(-50%);

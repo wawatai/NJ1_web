@@ -12,14 +12,14 @@
         display: flex;
         border-radius: 17px;
         overflow: hidden;
-        border: solid 1px $mainBorder_2;
+        border: solid 1px $register_Border;
 
         .left {
             width: 432px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: $register_BG;
+            background: $filter;
         }
 
         .right {
@@ -28,7 +28,7 @@
             align-items: center;
             width: 432px;
             padding: 32px 0 37px;
-
+            background: $register_BG;
 
             .title {
                 display: flex;
@@ -40,98 +40,47 @@
                 font-size: 25px;
                 font-weight: bold;
                 letter-spacing: 2px;
-                color: $title_1;
-                position: relative;
+                color: $register_Title;
 
-                &::before,&::after {
-                    content: "";
-                    position: absolute;
-                    width: 8px;
-                    height: 8px;
-                    transform: rotate(45deg);
-                    background: $register_Icon;
-                }
-                &::before {
-                    left: 170px;
-                }
-                &::after {
-                    right: 170px;
+                i {
+                    display: block;
+                    width: 44px;
+                    height: 44px;
+                    margin-right: 10px;
                 }
             }
 
             label {
                 position: relative;
-                margin-bottom: 19px;
+                margin-bottom: 30px;
                 display: flex;
                 justify-content: center;
-
-                i:not(.eye) {
-                    display: block;
-                    width: 21px;
-                    height: 24px;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    left: 10px;
-
-                    &.acc_ic {
-                        background-position-x: 0;
-                    }
-                    &.pass_ic {
-                        background-position-x: 25%;
-                    }
-                    &.phone_ic {
-                        background-position-x: 50%;
-                    }
-                    &.mail_ic {
-                        background-position-x: 75%;
-                    }
-                }
 
                 input {
                     width: 332px;
                     height: 41px;
                     @include mainInput;
-                    padding-left: 38px;
-                }
-
-                .err {
-                    position: absolute;
-                    bottom: -15px;
-                    left: 0;
-                    font-size: 12px;
-                    font-weight: bold;
-                    color: $remind;
                 }
 
                 .eye {
                     display: block;
-                    width: 23px;
-                    height: 17px;
+                    width: 16px;
+                    height: 16px;
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
-                    right: 20px;
+                    right: 10px;
                     cursor: pointer;
                 }
 
-                button {
+                .err {
                     position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    width: 86px;
-                    height: 29px;
-                    right: 11px;
-                    @include borderBtn;
+                    bottom: -26px;
+                    left: 0;
+                    font-size: 12px;
+                    font-weight: bold;
+                    color: $remind_sp;
                 }
-            }
-
-            .tips {
-                width: 332px;
-                font-size: 12px;
-                font-weight: bold;
-                color: $remind;
-                text-align: left;
             }
 
             .checkBox {
@@ -139,8 +88,9 @@
                 height: auto;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
                 margin: 23px 0 32px;
+                position: relative;
 
                 input {
                     width: 16px;
@@ -151,12 +101,22 @@
                 p {
                     font-size: 16px;
                     font-weight: bold;
-                    color: $mainFont_2;
+                    color: $register_Title;
 
                     span {
-                        color: $link;
-                        padding-left: 5px;
+                        display: block;
+                        color: $link_register;
+                        padding-top: 5px;
+                        text-decoration: underline;
                         cursor: pointer;
+                    }
+
+                    &.err {
+                        position: absolute;
+                        bottom: -20px;
+                        left: 0;
+                        font-size: 12px;
+                        color: $remind_sp;
                     }
                 }
             }

@@ -322,6 +322,15 @@ function openNews(){
     $('.jumpWindow').removeClass('display');
     $('.filter,.news').addClass('display');
 }
+function loading(){
+    $('.jumpWindow').removeClass('display');
+    $('.filter,.loading').addClass('display');
+
+    setTimeout(function(){
+        $(".filter")
+        .removeClass("display");
+    },2000);
+}
 
 //gameWrap小遊戲格hover切換左大圖
 $(function(){
@@ -437,10 +446,49 @@ $(function(){
         $(".dealBox").addClass("display");
         $(".dealBox").siblings().removeClass("display");
     })
-
     $(".dealWrap .tabs li:eq(1)").click(function(){
         $(".waterBox").addClass("display");
         $(".waterBox").siblings().removeClass("display");
+    })
+
+    $(".dealWrap .inputBox select").change(function(){
+        var n = $(".dealWrap .inputBox select").val();
+
+        if(n == 1) {
+            $(".dealWrap .fakeTable.deposit")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
+        else if(n == 2) {
+            $(".dealWrap .fakeTable.withdrawal")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
+        else if(n == 3) {
+            $(".dealWrap .fakeTable.transfer")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
+        else if(n == 4) {
+            $(".dealWrap .fakeTable.water")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
+        else if(n == 5) {
+            $(".dealWrap .fakeTable.active")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
+        else if(n == 6) {
+            $(".dealWrap .fakeTable.event")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
+        else if(n == 7) {
+            $(".dealWrap .fakeTable.else")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
     })
 })
 
@@ -569,11 +617,15 @@ $(function(){
 
 //withdrawal+transfer 展開
 $(function(){
-    $('.withdrawalWrap  .platformBox .open button').click(function(){
+    $('.withdrawalWrap .platformBox .open button').click(function(){
         $($(this).closest('div').prev('ul')).toggleClass('active');
+        $(this).closest(".open")
+        .toggleClass("active");
     })
-    $('.transferWrap  .platform .open button').click(function(){
+    $('.transferWrap .platform .open button').click(function(){
         $($(this).closest('div').prev('ul')).toggleClass('active');
+        $(this).closest(".open")
+        .toggleClass("active");
     })
 })
 

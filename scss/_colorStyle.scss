@@ -551,6 +551,8 @@ $withdrawal_limitWord: #e34119;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    padding-bottom: 2px;
+    box-sizing: border-box;
 
     &:hover,&:active,&.active {
         background: #ff4719;

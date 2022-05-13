@@ -525,6 +525,7 @@
         //loading
         &.loading {
             display: none;
+            width: 360px;
 
             &.display {
                 display: block;
@@ -544,7 +545,7 @@
                     text-align: center;
                     font-size: 14px;
                     font-weight: bold;
-                    color: $title_3;
+                    color: $time;
                     margin-top: 20px;
                 }
 

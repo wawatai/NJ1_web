@@ -2860,6 +2860,51 @@
                             height: auto;
                             box-sizing: border-box;
                             padding: 24px;
+                            display: none;
+
+                            &.display {
+                                display: block;
+                            }
+
+                            &.deposit,
+                            &.withdrawal {
+                                
+                                table {
+
+                                    tr {
+
+                                        td {
+                                            width: 10%;
+                                        }
+                                    }
+                                }
+                            }
+                            &.water,
+                            &.active {
+
+                                table {
+
+                                    tr {
+
+                                        td {
+                                            width: 20%;
+                                        }
+                                    }
+                                }
+                            }
+                            &.transfer,
+                            &.else {
+
+                                table {
+
+                                    tr {
+
+                                        td {
+                                            width: 25%;
+                                        }
+                                    }
+                                }
+                            }
 
                             .noData {
                                 display: none;
@@ -2917,7 +2962,6 @@
                                     }
                 
                                     td {
-                                        width: 25%;
                                         height: 50px;
                                         vertical-align: middle;
                                         border-bottom: solid 1px $fakeTable_border;
@@ -3978,11 +4022,15 @@
 
                     ul {
                         width: 100%;
-                        min-height: 367px;
+                        height: 120px;
                         overflow: hidden;
                         display: grid;
                         grid-template-columns: repeat(4,1fr);
                         grid-gap: 10px 10px;
+                        
+                        &.active {
+                            height: auto;
+                        }
 
                         &.three {
                             grid-template-columns: repeat(3,1fr);
@@ -4317,11 +4365,15 @@
     
                         ul {
                             width: 100%;
-                            min-height: 367px;
+                            height: 120px;
                             overflow: hidden;
                             display: grid;
                             grid-template-columns: repeat(4,1fr);
                             grid-gap: 10px 10px;
+
+                            &.active {
+                                height: auto;
+                            }
     
                             &.three {
                                 grid-template-columns: repeat(3,1fr);
@@ -4395,6 +4447,16 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+
+                            &.active {
+
+                                button {
+
+                                    i {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                            }
     
                             button {
                                 color: $mainFont_1;

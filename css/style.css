@@ -2445,6 +2445,7 @@ html body .filter .jumpWindow.betWindow .enterGame button:hover, html body .filt
 }
 html body .filter .jumpWindow.loading {
   display: none;
+  width: 360px;
 }
 html body .filter .jumpWindow.loading.display {
   display: block;
@@ -2463,7 +2464,7 @@ html body .filter .jumpWindow.loading .content p {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: #666666;
+  color: #d78f3a;
   margin-top: 20px;
 }
 @-webkit-keyframes loading {
@@ -3504,6 +3505,9 @@ html body .innerPage .center .innerSide .userInfo div .quickSelect li p.btn {
       -ms-flex-pack: center;
           justify-content: center;
   font-weight: bold;
+  padding-bottom: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html body .innerPage .center .innerSide .userInfo div .quickSelect li p.btn:hover, html body .innerPage .center .innerSide .userInfo div .quickSelect li p.btn:active, html body .innerPage .center .innerSide .userInfo div .quickSelect li p.btn.active {
   background: #ff4719;
@@ -6705,6 +6709,19 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 24px;
+  display: none;
+}
+html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable.display {
+  display: block;
+}
+html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable.deposit table tr td, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable.withdrawal table tr td {
+  width: 10%;
+}
+html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable.water table tr td, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable.active table tr td {
+  width: 20%;
+}
+html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable.transfer table tr td, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable.else table tr td {
+  width: 25%;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable .noData {
   display: none;
@@ -6754,7 +6771,6 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable t
   white-space: nowrap;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable table tr td {
-  width: 25%;
   height: 50px;
   vertical-align: middle;
   border-bottom: solid 1px #b5833b;
@@ -8015,13 +8031,16 @@ html body .innerPage .center .transferWrap .transferMiddle .platform .platformTi
 }
 html body .innerPage .center .transferWrap .transferMiddle .platform ul {
   width: 100%;
-  min-height: 367px;
+  height: 120px;
   overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px 10px;
+}
+html body .innerPage .center .transferWrap .transferMiddle .platform ul.active {
+  height: auto;
 }
 html body .innerPage .center .transferWrap .transferMiddle .platform ul.three {
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
@@ -8422,13 +8441,16 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox ul {
   width: 100%;
-  min-height: 367px;
+  height: 120px;
   overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px 10px;
+}
+html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox ul.active {
+  height: auto;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox ul.three {
   -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
@@ -8501,6 +8523,10 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox .open.active button i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox .open button {
   color: #ffc13c;

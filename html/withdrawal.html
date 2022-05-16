@@ -834,7 +834,10 @@
                                                 <p>PNG</p>
                                                 <i class="re_ic"></i>
                                             </div>
-                                            <p>$0</p>
+                                            <p class="remind">
+                                                <i class="remind_ic"></i>
+                                                残高エラー
+                                            </p>
                                         </li>
                                         <li>
                                             <div>
@@ -1094,7 +1097,7 @@
                                         <p class="notice">&ensp;</p>
                                     </li>
                                 </ul>
-                                <form>
+                                <form class="default display">
                                     <div class="row">
                                         <p>
                                             <i>※</i>
@@ -1102,7 +1105,8 @@
                                         </p>
                                         <div>
                                             <select>
-                                                <option>選んでください</option>
+                                                <option value="0" disabled selected>選んでください</option>
+                                                <option value="1">銀行口座</option>
                                             </select>
                                         </div>
                                     </div>
@@ -1117,7 +1121,41 @@
                                             <div class="remind sp">金額は正の数でなければなりません</div>
                                         </div>
                                     </div>
-                                    <button>確認</button>
+                                    <button type="button">確認</button>
+                                </form>
+                                <form class="bankcard">
+                                    <div class="row">
+                                        <p>
+                                            <i>※</i>
+                                            出金方法
+                                        </p>
+                                        <div>
+                                            <select>
+                                                <option value="0" disabled>選んでください</option>
+                                                <option value="1" selected>銀行口座</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <p>&ensp;</p>
+                                        <div>
+                                            <select>
+                                                <option value="">株式会社みずほ銀行 - ***23132</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <p>
+                                            <i>※</i>
+                                            出金金額
+                                        </p>
+                                        <div>
+                                            <input type="text" value="0" disabled>
+                                            <div class="remind">単一出金額は「¥1〜¥500,000」でなければなりません</div>
+                                            <div class="remind sp">金額は正の数でなければなりません</div>
+                                        </div>
+                                    </div>
+                                    <button type="button">確認</button>
                                 </form>
                                 <div class="remindBox">
                                     <div class="remindTitle">ご注意</div>

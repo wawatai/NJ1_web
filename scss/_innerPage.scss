@@ -177,7 +177,7 @@
                     }
 
                     &:nth-of-type(1),&:nth-of-type(4),&:nth-of-type(8) {
-                        border-top: solid 1px $mainBorder_2;
+                        border-top: solid 1px $Border;
                     }
 
                     i {
@@ -266,7 +266,7 @@
                     font-size: 20px;
                     letter-spacing: 2px;
                     color: $mainFont_1;
-                    border-bottom: solid 1px $mainBorder_2;
+                    border-bottom: solid 1px $Border;
                     font-weight: bold;
                 }
 
@@ -366,7 +366,7 @@
 
                     .content {
                         padding: 24px;
-                        border-bottom: solid 1px $mainBorder_2;
+                        border-bottom: solid 1px $Border;
 
                         h1 {
                             font-size: 17px;
@@ -658,136 +658,144 @@
             display: none;
             width: 1140px;
             height: auto;
-            background: $secondBG;
-            border-radius: 5px;
 
             &.display {
                 display: block;
             }
 
             &.innerMode {
+                background: $secondBG;
+                border-radius: 5px;
                 padding: 24px 20px 30px;
                 box-sizing: border-box;
             }
 
-            .vipHeader {
+            .top {
                 width: 100%;
                 height: auto;
-                padding: 30px 0 0 40px;
-                display: flex;
-                box-sizing: border-box;
+                border-radius: 5px;
+                background: $secondBG;
+                margin-bottom: 20px;
 
-                .medal {
-                    width: 80px;
-                    height: 116px;
-                    margin-right: 30px;
-                    flex-shrink: 0;
-                }
-
-                .rightBox {
+                .vipHeader {
                     width: 100%;
+                    height: auto;
+                    padding: 30px 0 0 40px;
                     display: flex;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    justify-content: center;
-
-                    .lv {
-                        margin: 6px 0 14px;
-                        font-size: 20px;
-                        font-weight: bold;
-                        letter-spacing: 2px;
-                        color: $mainFont_1;
+                    box-sizing: border-box;
+    
+                    .medal {
+                        width: 80px;
+                        height: 116px;
+                        margin-right: 30px;
+                        flex-shrink: 0;
                     }
-
-                    .money {
-
-                        span {
-                            font-size: 14px;
-                            letter-spacing: 1px;
-                            color: $mainFont_3;
+    
+                    .rightBox {
+                        width: 100%;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        justify-content: center;
+    
+                        .lv {
+                            margin: 6px 0 14px;
+                            font-size: 20px;
                             font-weight: bold;
-                            margin-right: 10px;
+                            letter-spacing: 2px;
+                            color: $mainFont_1;
+                        }
+    
+                        .money {
+    
+                            span {
+                                font-size: 14px;
+                                letter-spacing: 1px;
+                                color: $mainFont_3;
+                                font-weight: bold;
+                                margin-right: 10px;
+                            }
                         }
                     }
                 }
-            }
-
-            .lvGraph {
-                width: 100%;
-                height: auto;
-                box-sizing: border-box;
-                padding: 20px 20px 0;
-
-                .text {
-                    display: flex;
-                    margin-bottom: 8px;
-                    position: relative;
+    
+                .lvGraph {
                     width: 100%;
                     height: auto;
-
-                    li {
-                        width: 20%;
-                        font-size: 14px;
-                        color: $time;
-
-                        &:nth-of-type(2) {
-                            margin-left: -18px;
-                        }
-
-                        &:last-child {
-                            text-align: right;
-                            position: absolute;
-                            right: 0px;
-                            top: 0px;
-                        }
-                    }
-                }
-
-                .bar {
-                    width: 100%;
-                    height: 13px;
-                    @include levelBar;
-
-                    li {
-                        width: 8%;
-                    }
-                }
-            }
-
-            .nextBox {
-                width: 100%;
-                height: auto;
-                box-sizing: border-box;
-                padding: 22px 20px;
-
-                .nextWord {
-                    width: 100%;
-                    height: auto;
-                    letter-spacing: 2px;
-                    font-size: 16px;
-                    margin-bottom: 20px;
-                    color: $mainFont_1;
-                    font-weight: bold;
-                }
-
-                .nextBar {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    margin-bottom: 15px;
-                    font-size: 14px;
-                    letter-spacing: 1px;
-                    color: $mainFont_3;
-                    font-weight: bold;
-
-                    .bar {
-                        width: 400px;
-                        height: 8px;
-                        @include levelBar;
-                        margin: 0 10px;
-
+                    box-sizing: border-box;
+                    padding: 20px 20px 0;
+    
+                    .text {
+                        display: flex;
+                        margin-bottom: 8px;
+                        position: relative;
+                        width: 100%;
+                        height: auto;
+    
                         li {
                             width: 20%;
+                            font-size: 14px;
+                            color: $time;
+    
+                            &:nth-of-type(2) {
+                                margin-left: -18px;
+                            }
+    
+                            &:last-child {
+                                text-align: right;
+                                position: absolute;
+                                right: 0px;
+                                top: 0px;
+                            }
+                        }
+                    }
+    
+                    .bar {
+                        width: 100%;
+                        height: 13px;
+                        @include levelBar;
+    
+                        li {
+                            width: 8%;
+                        }
+                    }
+                }
+    
+                .nextBox {
+                    width: 100%;
+                    height: auto;
+                    box-sizing: border-box;
+                    padding: 22px 20px;
+    
+                    .nextWord {
+                        width: 100%;
+                        height: auto;
+                        letter-spacing: 2px;
+                        font-size: 16px;
+                        margin-bottom: 20px;
+                        color: $mainFont_1;
+                        font-weight: bold;
+                    }
+    
+                    .nextBar {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin-bottom: 15px;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        color: $mainFont_3;
+                        font-weight: bold;
+    
+                        .bar {
+                            width: 400px;
+                            height: 8px;
+                            @include levelBar;
+                            margin: 0 10px;
+    
+                            li {
+                                width: 20%;
+                            }
                         }
                     }
                 }
@@ -798,7 +806,8 @@
                 height: auto;
                 box-sizing: border-box;
                 padding: 18px 22px 6px;
-                border-top: solid 1px $mainBorder_2;
+                background: $secondBG;
+                border-radius: 5px;
 
                 .title {
                     width: 100%;
@@ -818,7 +827,7 @@
 
                     li {
                         width: calc(33.3% - 1px);
-                        border-right: solid 1px $mainBorder_2;
+                        border-right: solid 1px $Border;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -1062,7 +1071,7 @@
             .remindBox {
                 width: 100%;
                 height: auto;
-                border: solid 1px $mainBorder_2;
+                border: solid 1px $Border;
                 box-sizing: border-box;
                 padding: 16px;
                 margin-top: 50px;
@@ -1123,7 +1132,7 @@
                         letter-spacing: 2px;
                         color: $mainFont_1;
                         font-weight: bold;
-                        border-bottom: solid 1px $mainBorder_2;
+                        border-bottom: solid 1px $Border;
                     }
 
                     .content {
@@ -1135,7 +1144,7 @@
                             box-sizing: border-box;
                             padding: 14px 24px 0;
                             height: 180px;
-                            border-right: solid 1px $mainBorder_2;
+                            border-right: solid 1px $Border;
                             
                             .totalTitle {
                                 display: flex;
@@ -1319,6 +1328,20 @@
                                     font-weight: bold;
                                     box-sizing: border-box;
                                     padding-left: 20px;
+
+                                    &.remind {
+                                        display: flex;
+                                        align-items: center;
+                                        color: $remind_sp;
+                                        font-size: 17px;
+    
+                                        i {
+                                            display: block;
+                                            width: 17px;
+                                            height: 17px;
+                                            margin-right: 5px;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -1346,7 +1369,7 @@
                         height: auto;
                         padding: 10px 0 15px 20px;
                         box-sizing: border-box;
-                        border-bottom: solid 1px $mainBorder_2;
+                        border-bottom: solid 1px $Border;
 
                         span {
                             font-size: 20px;
@@ -1541,6 +1564,7 @@
                                             .idImg {
                                                 width: 80px;
                                                 height: 80px;
+                                                cursor: pointer;
                                             }
 
                                             .chooseWord {
@@ -1598,7 +1622,7 @@
                     height: 43px;
                     box-sizing: border-box;
                     padding: 0 20px;
-                    border-bottom: solid 1px $mainBorder_2;
+                    border-bottom: solid 1px $Border;
 
                     p {
                         display: flex;
@@ -1670,7 +1694,7 @@
                     .smallList {
                         height: auto;
                         padding: 12px 18px 12px;
-                        border-bottom: solid 1px $mainBorder_2;
+                        border-bottom: solid 1px $Border;
                         box-sizing: border-box;
 
                         &:last-child {
@@ -1882,7 +1906,7 @@
                     font-size: 15px;
                     color: $mainFont_2;
                     padding-bottom: 18px;
-                    border-bottom: solid 1px $mainBorder_2;
+                    border-bottom: solid 1px $Border;
                 }
 
                 .msg {
@@ -1911,7 +1935,7 @@
                     font-size: 20px;
                     font-weight: bold;
                     color: $mainFont_1;
-                    border-bottom: solid 1px $mainBorder_2;
+                    border-bottom: solid 1px $Border;
                 }
 
                 div {
@@ -1992,7 +2016,7 @@
                         width: 100%;
                         height: auto;
                         padding-bottom: 16px;
-                        border-bottom: solid 1px $mainBorder_2;
+                        border-bottom: solid 1px $Border;
 
                         &.nor {
                             justify-content: flex-end;
@@ -2076,7 +2100,7 @@
                             display: flex;
                             align-items: center;
                             background: $fakeTable_BG;
-                            border-bottom: solid 1px $mainBorder_2;
+                            border-bottom: solid 1px $Border;
                             cursor: pointer;
 
                             &.read {
@@ -2116,7 +2140,7 @@
                                     right: 0;
                                     width: 1px;
                                     height: 15px;
-                                    background: $mainBorder_2;
+                                    background: $Border;
                                 }
                             }
 
@@ -2139,7 +2163,7 @@
                                     right: 0;
                                     width: 1px;
                                     height: 15px;
-                                    background: $mainBorder_1;
+                                    background: $Border;
                                 }
                             }
 
@@ -2376,7 +2400,7 @@
                                             width: 560px;
                                             height: auto;
                                             border-radius: 5px;
-                                            box-shadow: 0 0 0 1px $mainBorder_2;
+                                            box-shadow: 0 0 0 1px $Border;
                                             background: $thirdBG;
 
                                             tr {
@@ -2391,7 +2415,7 @@
                                                 th {
                                                     height: 30px;
                                                     vertical-align: middle;
-                                                    border-bottom: solid 2px $mainBorder_2;
+                                                    border-bottom: solid 2px $Border;
 
                                                     &:last-child {
 
@@ -2409,14 +2433,14 @@
                                                         overflow: hidden;
                                                         text-overflow: ellipsis;
                                                         white-space: nowrap;
-                                                        border-right: solid 1px $mainBorder_2;
+                                                        border-right: solid 1px $Border;
                                                     }
                                                 }
 
                                                 td {
                                                     height: 50px;
                                                     vertical-align: middle;
-                                                    border-bottom: solid 1px $mainBorder_2;
+                                                    border-bottom: solid 1px $Border;
 
                                                     &:nth-of-type(2) {
 
@@ -2441,7 +2465,7 @@
                                                         overflow: hidden;
                                                         text-overflow: ellipsis;
                                                         white-space: nowrap;
-                                                        border-right: solid 1px $mainBorder_2;
+                                                        border-right: solid 1px $Border;
                                                     }
                                                 }
                                             }
@@ -2474,7 +2498,7 @@
                             height: auto;
                             box-sizing: border-box;
                             padding: 24px;
-                            border-bottom: solid 1px $mainBorder_2;
+                            border-bottom: solid 1px $Border;
 
                             form {
                                 width: 100%;
@@ -2769,7 +2793,7 @@
                             height: auto;
                             box-sizing: border-box;
                             padding: 24px;
-                            border-bottom: solid 1px $mainBorder_2;
+                            border-bottom: solid 1px $Border;
 
                             form {
                                 width: 100%;
@@ -3235,7 +3259,7 @@
                     height: auto;
                     box-sizing: border-box;
                     padding: 24px;
-                    border-bottom: solid 1px $mainBorder_2;
+                    border-bottom: solid 1px $Border;
     
                     .inputGroup {
                         display: flex;
@@ -3332,7 +3356,7 @@
                         li {
                             width: 100%;
                             height: 40px;
-                            border-bottom: solid 1px $mainBorder_2;
+                            border-bottom: solid 1px $Border;
                             padding: 1px;
                             box-sizing: border-box;
 
@@ -3378,7 +3402,7 @@
                                     font-weight: bold;
                                     font-size: 14px;
                                     text-align: center;
-                                    border-right: solid 1px $mainBorder_2;
+                                    border-right: solid 1px $Border;
         
                                     &:nth-of-type(1),
                                     &:nth-of-type(2),
@@ -3424,7 +3448,7 @@
                                 background: $fakeTable_BG;
                                 margin: 20px auto 0;
                                 border-radius: 5px;
-                                box-shadow: 0 0 0 1px $mainBorder_2;
+                                box-shadow: 0 0 0 1px $Border;
                 
                                 tr {
                 
@@ -3438,7 +3462,7 @@
                                     th {
                                         height: 36px;
                                         vertical-align: middle;
-                                        border-bottom: solid 2px $mainBorder_2;
+                                        border-bottom: solid 2px $Border;
                 
                                         &:last-child {
                 
@@ -3452,7 +3476,7 @@
                                             font-size: 14px;
                                             font-weight: bold;
                                             color: $mainFont_3;
-                                            border-right: solid 1px $mainBorder_2;
+                                            border-right: solid 1px $Border;
                                             text-align: center;
                                             overflow: hidden;
                                             text-overflow: ellipsis;
@@ -3464,7 +3488,7 @@
                                         width: 5%;
                                         height: 50px;
                                         vertical-align: middle;
-                                        border-bottom: solid 1px $mainBorder_2;
+                                        border-bottom: solid 1px $Border;
                 
                                         &:last-child {
                 
@@ -3478,7 +3502,7 @@
                                             font-size: 14px;
                                             font-weight: bold;
                                             color: $mainFont_3;
-                                            border-right: solid 1px $mainBorder_2;
+                                            border-right: solid 1px $Border;
                                             text-align: center;
                                             overflow: hidden;
                                             text-overflow: ellipsis;
@@ -3577,7 +3601,7 @@
                         width: 100%;
                         box-sizing: border-box;
                         padding: 0 18px 0 22px;
-                        border-bottom: solid 1px $mainBorder_2;
+                        border-bottom: solid 1px $Border;
                         font-size: 20px;
                         letter-spacing: 2px;
                         color: $mainFont_1;
@@ -3795,7 +3819,7 @@
                                                         display: flex;
                                                         align-items: center;
                                                         justify-content: center;
-                                                        border-right: solid 1px $mainBorder_2;
+                                                        border-right: solid 1px $Border;
                                                         color: $deposit_postNum;
                                                         font-size: 14px;
                                                         font-weight: bold;
@@ -3889,7 +3913,7 @@
                         margin-top: 20px;
                         width: 100%;
                         height: auto;
-                        border: solid 1px $mainBorder_2;
+                        border: solid 1px $Border;
                         box-sizing: border-box;
                         padding: 12px;
 
@@ -3940,7 +3964,7 @@
                     padding: 0 22px;
                     display: flex;
                     align-items: center;
-                    border-bottom: solid 1px $mainBorder_2;
+                    border-bottom: solid 1px $Border;
 
                     div {
                         color: $mainFont_1;
@@ -3956,7 +3980,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    border-bottom: solid 1px $mainBorder_2;
+                    border-bottom: solid 1px $Border;
 
                     .centerWallet {
                         width: 49%;
@@ -4010,7 +4034,7 @@
                     height: auto;
                     box-sizing: border-box;
                     padding: 21px 23px 0;
-                    border-bottom: solid 1px $mainBorder_2;
+                    border-bottom: solid 1px $Border;
                     
                     .platformTitle {
                         font-size: 17px;
@@ -4092,6 +4116,20 @@
                                 font-weight: bold;
                                 box-sizing: border-box;
                                 padding-left: 20px;
+
+                                &.remind {
+                                    display: flex;
+                                    align-items: center;
+                                    color: $remind_sp;
+                                    font-size: 17px;
+
+                                    i {
+                                        display: block;
+                                        width: 17px;
+                                        height: 17px;
+                                        margin-right: 5px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -4262,7 +4300,7 @@
                         align-items: center;
                         padding: 0 22px;
                         box-sizing: border-box;
-                        border-bottom: solid 1px $mainBorder_2;
+                        border-bottom: solid 1px $Border;
     
                         div {
                             font-weight: bold;
@@ -4278,7 +4316,7 @@
                         align-items: center;
                         width: 100%;
                         height: 130px;
-                        border-bottom: solid 1px $mainBorder_2;
+                        border-bottom: solid 1px $Border;
     
                         .smallBox {
                             width: 33%;
@@ -4302,7 +4340,7 @@
                                 right: 0;
                                 width: 1px;
                                 height: 60%;
-                                background: $mainBorder_2;
+                                background: $Border;
                             }
     
                             .smallTitle {
@@ -4435,6 +4473,20 @@
                                     font-weight: bold;
                                     box-sizing: border-box;
                                     padding-left: 20px;
+
+                                    &.remind {
+                                        display: flex;
+                                        align-items: center;
+                                        color: $remind_sp;
+                                        font-size: 17px;
+
+                                        i {
+                                            display: block;
+                                            width: 17px;
+                                            height: 17px;
+                                            margin-right: 5px;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -4532,12 +4584,18 @@
                     }
 
                     form {
+                        display: none;
+
+                        &.display {
+                            display: block;
+                        }
 
                         .row {
                             display: flex;
                             margin-bottom: 23px;
 
                             p {
+                                width: 80px;
                                 font-size: 14px;
                                 letter-spacing: 1px;
                                 color: $mainFont_3;
@@ -4553,14 +4611,14 @@
                             div {
 
                                 select {
-                                    width: 257px;
+                                    width: 287px;
                                     height: 40px;
                                     margin-left: 26px;
                                     @include mainSelect;
                                 }
 
                                 input {
-                                    width: 257px;
+                                    width: 287px;
                                     height: 40px;
                                     margin-left: 26px;
                                     @include mainInput;
@@ -4580,9 +4638,9 @@
                         }
 
                         button {
-                            width: 257px;
+                            width: 287px;
                             height: 40px;
-                            margin-left: 100px;
+                            margin-left: 106px;
                             @include mainBtn;
                         }
                     }
@@ -4593,7 +4651,7 @@
                         box-sizing: border-box;
                         padding: 15px;
                         margin-top: 24px;
-                        border: solid 1px $mainBorder_2;
+                        border: solid 1px $Border;
                         background: $secondBG;
 
                         .remindTitle {
@@ -4645,7 +4703,7 @@
                     letter-spacing: 2px;
                     font-weight: bold;
                     padding: 10px 20px;
-                    border-bottom: solid 1px $mainBorder_2;
+                    border-bottom: solid 1px $Border;
                 }
 
                 .content {
@@ -4822,7 +4880,7 @@
                         height: auto;
                         box-sizing: border-box;
                         padding: 24px;
-                        border-bottom: solid 1px $mainBorder_2;
+                        border-bottom: solid 1px $Border;
 
                         form {
                             width: 100%;
@@ -4927,7 +4985,7 @@
                             li {
                                 width: 100%;
                                 height: 40px;
-                                border-bottom: solid 1px $mainBorder_2;
+                                border-bottom: solid 1px $Border;
                                 padding: 1px;
                                 box-sizing: border-box;
     
@@ -4937,6 +4995,7 @@
         
                                 &.title {
                                     border-bottom: solid 2px $fakeTable_TitleBorder;
+                                    margin: 0;
                                 }
         
                                 &.active {
@@ -4973,7 +5032,7 @@
                                         font-weight: bold;
                                         font-size: 14px;
                                         text-align: center;
-                                        border-right: solid 1px $mainBorder_2;
+                                        border-right: solid 1px $Border;
             
                                         &:nth-of-type(1),
                                         &:nth-of-type(2),
@@ -5017,7 +5076,7 @@
                                     background: $fakeTable_BG;
                                     margin: 20px auto 0;
                                     border-radius: 5px;
-                                    box-shadow: 0 0 0 1px $mainBorder_2;
+                                    box-shadow: 0 0 0 1px $Border;
                     
                                     tr {
                     
@@ -5031,7 +5090,7 @@
                                         th {
                                             height: 36px;
                                             vertical-align: middle;
-                                            border-bottom: solid 2px $mainBorder_2;
+                                            border-bottom: solid 2px $Border;
                     
                                             &:last-child {
                     
@@ -5045,7 +5104,7 @@
                                                 font-size: 14px;
                                                 font-weight: bold;
                                                 color: $mainFont_3;
-                                                border-right: solid 1px $mainBorder_2;
+                                                border-right: solid 1px $Border;
                                                 text-align: center;
                                                 overflow: hidden;
                                                 text-overflow: ellipsis;
@@ -5057,7 +5116,7 @@
                                             width: 5%;
                                             height: 50px;
                                             vertical-align: middle;
-                                            border-bottom: solid 1px $mainBorder_2;
+                                            border-bottom: solid 1px $Border;
                     
                                             &:last-child {
                     
@@ -5071,7 +5130,7 @@
                                                 font-size: 14px;
                                                 font-weight: bold;
                                                 color: $mainFont_3;
-                                                border-right: solid 1px $mainBorder_2;
+                                                border-right: solid 1px $Border;
                                                 text-align: center;
                                                 overflow: hidden;
                                                 text-overflow: ellipsis;
@@ -5231,6 +5290,52 @@
                                         &.none {
                                             color: $disable;
                                         }
+                                    }
+                                }
+                            }
+                        }
+
+                        .pageBox {
+                            width: auto;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            position: absolute;
+                            right: 24px;
+                            bottom: 0;
+    
+                            p {
+                                color: $mainFont_2;
+                                font-size: 12px;
+                                font-weight: bold;
+                            }
+    
+                            .page {
+                                width: auto;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                margin-left: 10px;
+    
+                                i {
+                                    display: block;
+                                    width: 7px;
+                                    height: 11px;
+                                    cursor: pointer;
+    
+                                    &.arrow_right {
+                                        transform: scaleX(-1);
+                                    }
+                                }
+    
+                                button {
+                                    width: 28px;
+                                    height: 28px;
+                                    @include page;
+                                    margin-right: 8px;
+    
+                                    &:nth-of-type(1) {
+                                        margin-left: 8px;
                                     }
                                 }
                             }

@@ -451,6 +451,12 @@ $(function(){
         $(".waterBox").siblings().removeClass("display");
     })
 
+    $(".dealWrap .search .btnBox button").click(function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+    })
+
     $(".dealWrap .inputBox select").change(function(){
         var n = $(".dealWrap .inputBox select").val();
 
@@ -583,6 +589,12 @@ $(function(){
     $('.betWrap .fakeTable .arrow_ic').click(function(){
         $($(this).closest('li')).toggleClass('active');
     })
+
+    $(".betWrap .timeGroup .btnBox button").click(function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+    })
 })
 
 //deposit切換
@@ -688,5 +700,48 @@ $(function(){
         $body.delay('0').animate({
                 scrollTop: 0
         },500)
+    })
+})
+
+//transfer切換
+$(function(){
+    $(".withdrawalWrap .bottom form select").change(function(){
+        var n = $(".withdrawalWrap .bottom form select").val();
+
+        if(n == 1) {
+            $(".withdrawalWrap .bottom form.bankcard")
+            .addClass("display")
+            .siblings().removeClass("display");
+        }
+    })
+})
+
+//point
+$(function(){
+    $(".pointWrap .tabs li").click(function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+    })
+    $(".pointWrap .tabs li:eq(0)").click(function(){
+        $(".pointWrap .fakeTable")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+    $(".pointWrap .tabs li:eq(1)").click(function(){
+        $(".pointWrap .recordTable")
+        .addClass("display")
+        .siblings().removeClass("display");
+    })
+
+    $(".pointWrap .search .btnBox button").click(function(){
+        $(this)
+        .addClass("active")
+        .siblings().removeClass("active");
+    })
+
+    $(".pointWrap .fakeTable .arrow_ic").click(function(){
+        $(this).closest("li")
+        .toggleClass("active");
     })
 })

@@ -819,7 +819,10 @@
                                             <p>PNG</p>
                                             <i class="re_ic"></i>
                                         </div>
-                                        <p>$0</p>
+                                        <p class="remind">
+                                            <i class="remind_ic"></i>
+                                            残高エラー
+                                        </p>
                                     </li>
                                     <li>
                                         <div>
@@ -1066,14 +1069,14 @@
                                     <div class="inputBox">
                                         <input type="text" placeholder="0">
                                         <div class="btnBox">
-                                            <button>$100</button>
-                                            <button>$500</button>
-                                            <button>$1000</button>
-                                            <button>$3000</button>
-                                            <button>$5000</button>
-                                            <button>$10000</button>
-                                            <button>全て</button>
-                                            <button class="check">確認</button>
+                                            <button type="button">$100</button>
+                                            <button type="button">$500</button>
+                                            <button type="button">$1000</button>
+                                            <button type="button">$3000</button>
+                                            <button type="button">$5000</button>
+                                            <button type="button">$10000</button>
+                                            <button type="button">全て</button>
+                                            <button type="button" class="check">確認</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1085,7 +1088,7 @@
                                     <p>
                                         振替履歷
                                     </p>
-                                    <p class="more">
+                                    <p class="more" onclick="loading()">
                                         もっと
                                         <i class="arrow"></i>
                                     </p>

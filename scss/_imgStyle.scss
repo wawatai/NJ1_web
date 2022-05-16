@@ -52,6 +52,10 @@ footer .twitter {
     background: url('../images/icon/svg/loading_b.svg') no-repeat;
     background-size: 100%;
 }
+.jumpWindow .pageBox .page i {
+    background: url('../images/icon/svg/arrow_g.svg') no-repeat;
+    background-size: contain;
+}
 
 //gameWrap background
 .gameWrap {
@@ -232,6 +236,10 @@ footer .twitter {
     background: url('../images/icon/svg/refresh.svg') no-repeat;
     background-size: contain;
 }
+.walletWrap .platformWallet .remind_ic {
+    background: url('../images/icon/remind.png') no-repeat;
+    background-size: contain;
+}
 
 //dealWrap
 .dealWrap .waterBox .arrow_ic {
@@ -342,6 +350,10 @@ footer .twitter {
     background: url('../images/icon/svg/unfold.svg') no-repeat;
     background-size: 100%;
 }
+.withdrawalWrap .platformBox .remind_ic {
+    background: url('../images/icon/remind.png') no-repeat;
+    background-size: contain;
+}
 
 //transferWrap .walletTitle .reset_ic
 .transferWrap .walletTitle .reset_ic {
@@ -351,6 +363,10 @@ footer .twitter {
 .transferWrap .platform .db_arrow {
     background: url('../images/icon/svg/unfold.svg') no-repeat;
     background-size: 100%;
+}
+.transferWrap .platform .remind_ic {
+    background: url('../images/icon/remind.png') no-repeat;
+    background-size: contain;
 }
 .transferWrap .platformBox .trans_ic {
     background: url('../images/icon/svg/transfer_arrow.svg') no-repeat;

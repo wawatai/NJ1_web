@@ -164,7 +164,7 @@
             .nav {
                 margin: 0 26px;
                 height: 70px;
-                border-bottom: solid 1px $mainBorder_2;
+                border-bottom: solid 1px $Border;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -363,7 +363,11 @@
                                     button {
                                         width: 140px;
                                         height: 40px;
-                                        @include footerBtn;
+                                        @include eventBtn;
+
+                                        &:nth-of-type(2) {
+                                            @include eventBtn_2;
+                                        }
                                     }
                                 }
                             }

@@ -64,6 +64,11 @@ footer .twitter {
   background-size: 100%;
 }
 
+.jumpWindow .pageBox .page i {
+  background: url("../images/icon/svg/arrow_g.svg") no-repeat;
+  background-size: contain;
+}
+
 .gameWrap {
   background: url("../images/gameBG.jpg") no-repeat;
   background-size: contain;
@@ -263,6 +268,11 @@ footer .twitter {
   background-size: contain;
 }
 
+.walletWrap .platformWallet .remind_ic {
+  background: url("../images/icon/remind.png") no-repeat;
+  background-size: contain;
+}
+
 .dealWrap .waterBox .arrow_ic {
   background: url("../images/icon/svg/arrow_r.svg") no-repeat;
   background-size: 100%;
@@ -375,6 +385,11 @@ footer .twitter {
   background-size: 100%;
 }
 
+.withdrawalWrap .platformBox .remind_ic {
+  background: url("../images/icon/remind.png") no-repeat;
+  background-size: contain;
+}
+
 .transferWrap .walletTitle .reset_ic {
   background: url("../images/icon/svg/refresh.svg") no-repeat;
   background-size: 100%;
@@ -383,6 +398,11 @@ footer .twitter {
 .transferWrap .platform .db_arrow {
   background: url("../images/icon/svg/unfold.svg") no-repeat;
   background-size: 100%;
+}
+
+.transferWrap .platform .remind_ic {
+  background: url("../images/icon/remind.png") no-repeat;
+  background-size: contain;
 }
 
 .transferWrap .platformBox .trans_ic {
@@ -1874,7 +1894,7 @@ html body .filter .jumpWindow.news .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: solid 1px #ffc13c;
+  border-bottom: solid 1px #b5833b;
   margin: 20px 20px 0;
 }
 html body .filter .jumpWindow.news .nav li {
@@ -1925,7 +1945,7 @@ html body .filter .jumpWindow.news .content li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: solid 1px #ffc13c;
+  border-bottom: solid 1px #b5833b;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -2426,7 +2446,7 @@ html body .filter .jumpWindow.betWindow .enterGame {
   height: auto;
   text-align: center;
   padding: 20px 0;
-  border-top: solid 1px #ffc13c;
+  border-top: solid 1px #b5833b;
 }
 html body .filter .jumpWindow.betWindow .enterGame button {
   width: 351px;
@@ -2494,23 +2514,22 @@ html body .filter .jumpWindow.pointWindow.display {
   display: block;
 }
 html body .filter .jumpWindow.pointWindow .content {
-  padding: 24px;
+  padding: 24px 24px 10px;
 }
 html body .filter .jumpWindow.pointWindow .content table {
-  width: 100%;
+  width: 490px;
   height: auto;
   -webkit-box-shadow: 0 0 0 1px #b5833b;
           box-shadow: 0 0 0 1px #b5833b;
+  background: #272727;
 }
-html body .filter .jumpWindow.pointWindow .content table tr {
-  border-bottom: solid 1px #b5833b;
-}
-html body .filter .jumpWindow.pointWindow .content table tr:last-child {
+html body .filter .jumpWindow.pointWindow .content table tr:last-child td {
   border: none;
 }
 html body .filter .jumpWindow.pointWindow .content table tr th {
   vertical-align: middle;
-  height: 40px;
+  height: 30px;
+  border-bottom: solid 2px #c69c6d;
 }
 html body .filter .jumpWindow.pointWindow .content table tr th:last-child p {
   border: none;
@@ -2518,8 +2537,8 @@ html body .filter .jumpWindow.pointWindow .content table tr th:last-child p {
 html body .filter .jumpWindow.pointWindow .content table tr th p {
   font-size: 14px;
   font-weight: bold;
-  color: #dcab70;
-  border-right: solid 1px #ffc13c;
+  border-right: solid 1px #b5833b;
+  color: #ffc13c;
 }
 html body .filter .jumpWindow.pointWindow .content table tr td {
   width: 50%;
@@ -2533,8 +2552,65 @@ html body .filter .jumpWindow.pointWindow .content table tr td p {
   font-size: 14px;
   font-weight: bold;
   color: #ffc13c;
-  border-right: solid 1px #ffc13c;
+  border-right: solid 1px #b5833b;
   text-align: center;
+}
+html body .filter .jumpWindow.pointWindow .content .pageBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+html body .filter .jumpWindow.pointWindow .content .pageBox p {
+  color: #ababab;
+  font-size: 12px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.pointWindow .content .pageBox .page {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+html body .filter .jumpWindow.pointWindow .content .pageBox .page i {
+  display: block;
+  width: 7px;
+  height: 11px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow.pointWindow .content .pageBox .page i.arrow_right {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+html body .filter .jumpWindow.pointWindow .content .pageBox .page button {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+html body .filter .jumpWindow.pointWindow .content .pageBox .page button:hover, html body .filter .jumpWindow.pointWindow .content .pageBox .page button:active, html body .filter .jumpWindow.pointWindow .content .pageBox .page button.active {
+  background: #ffc13c;
+  color: #000000;
+}
+html body .filter .jumpWindow.pointWindow .content .pageBox .page button:nth-of-type(1) {
+  margin-left: 8px;
 }
 html body .filter .jumpWindow.ruleWindow {
   width: 840px;
@@ -3070,21 +3146,28 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .game
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button {
   width: 140px;
   height: 40px;
-  background: #ffbb17;
+  background: #f5951f;
   border-radius: 5px;
+  border: none;
   color: #000000;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-  text-align: center;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:hover, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button.active {
-  background: #ff4719;
+  background: #fb770a;
   color: #ffffff;
 }
-html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:hover::before, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:active::before, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button.active::before {
-  display: none;
+html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:nth-of-type(2) {
+  background: #30ebff;
+  border-radius: 5px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:nth-of-type(2):hover, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:nth-of-type(2):active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:nth-of-type(2).active {
+  background: #0a92be;
+  color: #ffffff;
 }
 html body .eventWrap {
   width: auto;
@@ -4074,18 +4157,25 @@ html body .innerPage .center .vipWrap {
   display: none;
   width: 1140px;
   height: auto;
-  background: #1f1f1f;
-  border-radius: 5px;
 }
 html body .innerPage .center .vipWrap.display {
   display: block;
 }
 html body .innerPage .center .vipWrap.innerMode {
+  background: #1f1f1f;
+  border-radius: 5px;
   padding: 24px 20px 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-html body .innerPage .center .vipWrap .vipHeader {
+html body .innerPage .center .vipWrap .top {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  background: #1f1f1f;
+  margin-bottom: 20px;
+}
+html body .innerPage .center .vipWrap .top .vipHeader {
   width: 100%;
   height: auto;
   padding: 30px 0 0 40px;
@@ -4095,14 +4185,14 @@ html body .innerPage .center .vipWrap .vipHeader {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-html body .innerPage .center .vipWrap .vipHeader .medal {
+html body .innerPage .center .vipWrap .top .vipHeader .medal {
   width: 80px;
   height: 116px;
   margin-right: 30px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-html body .innerPage .center .vipWrap .vipHeader .rightBox {
+html body .innerPage .center .vipWrap .top .vipHeader .rightBox {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4118,28 +4208,28 @@ html body .innerPage .center .vipWrap .vipHeader .rightBox {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body .innerPage .center .vipWrap .vipHeader .rightBox .lv {
+html body .innerPage .center .vipWrap .top .vipHeader .rightBox .lv {
   margin: 6px 0 14px;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
   color: #ffc13c;
 }
-html body .innerPage .center .vipWrap .vipHeader .rightBox .money span {
+html body .innerPage .center .vipWrap .top .vipHeader .rightBox .money span {
   font-size: 14px;
   letter-spacing: 1px;
   color: #fb770a;
   font-weight: bold;
   margin-right: 10px;
 }
-html body .innerPage .center .vipWrap .lvGraph {
+html body .innerPage .center .vipWrap .top .lvGraph {
   width: 100%;
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 20px 20px 0;
 }
-html body .innerPage .center .vipWrap .lvGraph .text {
+html body .innerPage .center .vipWrap .top .lvGraph .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4148,44 +4238,44 @@ html body .innerPage .center .vipWrap .lvGraph .text {
   width: 100%;
   height: auto;
 }
-html body .innerPage .center .vipWrap .lvGraph .text li {
+html body .innerPage .center .vipWrap .top .lvGraph .text li {
   width: 20%;
   font-size: 14px;
   color: #d78f3a;
 }
-html body .innerPage .center .vipWrap .lvGraph .text li:nth-of-type(2) {
+html body .innerPage .center .vipWrap .top .lvGraph .text li:nth-of-type(2) {
   margin-left: -18px;
 }
-html body .innerPage .center .vipWrap .lvGraph .text li:last-child {
+html body .innerPage .center .vipWrap .top .lvGraph .text li:last-child {
   text-align: right;
   position: absolute;
   right: 0px;
   top: 0px;
 }
-html body .innerPage .center .vipWrap .lvGraph .bar {
+html body .innerPage .center .vipWrap .top .lvGraph .bar {
   width: 100%;
   height: 13px;
   background: #3e3e3e;
   border-radius: 10px;
   overflow: hidden;
 }
-html body .innerPage .center .vipWrap .lvGraph .bar li {
+html body .innerPage .center .vipWrap .top .lvGraph .bar li {
   background: -webkit-gradient(linear, left top, right top, from(#4ffc21), to(#09d217));
   background: linear-gradient(to right, #4ffc21 0%, #09d217 100%);
   height: 100%;
   border-radius: 10px;
 }
-html body .innerPage .center .vipWrap .lvGraph .bar li {
+html body .innerPage .center .vipWrap .top .lvGraph .bar li {
   width: 8%;
 }
-html body .innerPage .center .vipWrap .nextBox {
+html body .innerPage .center .vipWrap .top .nextBox {
   width: 100%;
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 22px 20px;
 }
-html body .innerPage .center .vipWrap .nextBox .nextWord {
+html body .innerPage .center .vipWrap .top .nextBox .nextWord {
   width: 100%;
   height: auto;
   letter-spacing: 2px;
@@ -4194,7 +4284,7 @@ html body .innerPage .center .vipWrap .nextBox .nextWord {
   color: #ffc13c;
   font-weight: bold;
 }
-html body .innerPage .center .vipWrap .nextBox .nextBar {
+html body .innerPage .center .vipWrap .top .nextBox .nextBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4210,7 +4300,7 @@ html body .innerPage .center .vipWrap .nextBox .nextBar {
   color: #fb770a;
   font-weight: bold;
 }
-html body .innerPage .center .vipWrap .nextBox .nextBar .bar {
+html body .innerPage .center .vipWrap .top .nextBox .nextBar .bar {
   width: 400px;
   height: 8px;
   background: #3e3e3e;
@@ -4218,13 +4308,13 @@ html body .innerPage .center .vipWrap .nextBox .nextBar .bar {
   overflow: hidden;
   margin: 0 10px;
 }
-html body .innerPage .center .vipWrap .nextBox .nextBar .bar li {
+html body .innerPage .center .vipWrap .top .nextBox .nextBar .bar li {
   background: -webkit-gradient(linear, left top, right top, from(#4ffc21), to(#09d217));
   background: linear-gradient(to right, #4ffc21 0%, #09d217 100%);
   height: 100%;
   border-radius: 10px;
 }
-html body .innerPage .center .vipWrap .nextBox .nextBar .bar li {
+html body .innerPage .center .vipWrap .top .nextBox .nextBar .bar li {
   width: 20%;
 }
 html body .innerPage .center .vipWrap .levelEnjoy {
@@ -4233,7 +4323,8 @@ html body .innerPage .center .vipWrap .levelEnjoy {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 18px 22px 6px;
-  border-top: solid 1px #b5833b;
+  background: #1f1f1f;
+  border-radius: 5px;
 }
 html body .innerPage .center .vipWrap .levelEnjoy .title {
   width: 100%;
@@ -4803,6 +4894,22 @@ html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet u
           box-sizing: border-box;
   padding-left: 20px;
 }
+html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet ul li p.remind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e11515;
+  font-size: 17px;
+}
+html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet ul li p.remind i {
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
 html body .innerPage .center .cardWrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5089,6 +5196,7 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form ul li .idImg {
   width: 80px;
   height: 80px;
+  cursor: pointer;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form ul li .chooseWord {
   color: #d78f3a;
@@ -5827,7 +5935,7 @@ html body .innerPage .center .mailWrap .bottom .list ul li .msg::before {
   right: 0;
   width: 1px;
   height: 15px;
-  background: #ffc13c;
+  background: #b5833b;
 }
 html body .innerPage .center .mailWrap .bottom .list ul li .date {
   width: 14%;
@@ -8099,6 +8207,22 @@ html body .innerPage .center .transferWrap .transferMiddle .platform ul li p {
           box-sizing: border-box;
   padding-left: 20px;
 }
+html body .innerPage .center .transferWrap .transferMiddle .platform ul li p.remind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e11515;
+  font-size: 17px;
+}
+html body .innerPage .center .transferWrap .transferMiddle .platform ul li p.remind i {
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
 html body .innerPage .center .transferWrap .transferMiddle .platform .open {
   width: 100%;
   height: auto;
@@ -8509,6 +8633,22 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox
           box-sizing: border-box;
   padding-left: 20px;
 }
+html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox ul li p.remind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e11515;
+  font-size: 17px;
+}
+html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox ul li p.remind i {
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+}
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox .open {
   width: 100%;
   height: auto;
@@ -8603,6 +8743,12 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom ul li .no
   letter-spacing: 2px;
   color: #ababab;
 }
+html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form {
+  display: none;
+}
+html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form.display {
+  display: block;
+}
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8610,6 +8756,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row
   margin-bottom: 23px;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row p {
+  width: 80px;
   font-size: 14px;
   letter-spacing: 1px;
   color: #fb770a;
@@ -8621,7 +8768,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row
   color: #e11515;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row div select {
-  width: 257px;
+  width: 287px;
   height: 40px;
   margin-left: 26px;
   background: #101010;
@@ -8644,7 +8791,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row
   color: #ffffff;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row div input {
-  width: 257px;
+  width: 287px;
   height: 40px;
   margin-left: 26px;
   background: #101010;
@@ -8682,9 +8829,9 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row
   color: #e11515;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form button {
-  width: 257px;
+  width: 287px;
   height: 40px;
-  margin-left: 100px;
+  margin-left: 106px;
   background: -webkit-gradient(linear, left top, right top, from(#ff4b33), color-stop(98%, #d8001f));
   background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
   border: none;
@@ -9161,6 +9308,7 @@ html body .innerPage .center .pointWrap .bottom .content .fakeTable ul li:last-c
 }
 html body .innerPage .center .pointWrap .bottom .content .fakeTable ul li.title {
   border-bottom: solid 2px #c69c6d;
+  margin: 0;
 }
 html body .innerPage .center .pointWrap .bottom .content .fakeTable ul li.active {
   height: auto;
@@ -9426,6 +9574,62 @@ html body .innerPage .center .pointWrap .bottom .content .recordTable table tr t
 }
 html body .innerPage .center .pointWrap .bottom .content .recordTable table tr td p.none {
   color: #999999;
+}
+html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox {
+  width: auto;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+}
+html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox p {
+  color: #ababab;
+  font-size: 12px;
+  font-weight: bold;
+}
+html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page i {
+  display: block;
+  width: 7px;
+  height: 11px;
+  cursor: pointer;
+}
+html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page i.arrow_right {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page button {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page button:hover, html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page button:active, html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page button.active {
+  background: #ffc13c;
+  color: #000000;
+}
+html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox .page button:nth-of-type(1) {
+  margin-left: 8px;
 }
 html body .helpPage {
   width: 100%;

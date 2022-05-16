@@ -1,6 +1,6 @@
 //大背景色
 $BG: #292929;
-$gameWrapBG: #101010;
+$gameWrapBG: #070707;
 $innerBG: #0d0d0d;
 $secondBG: #1f1f1f;
 $thirdBG: #181818;
@@ -10,7 +10,7 @@ $Border: #b5833b;
 
 //主字色
 $mainFont_1: #ffc13c;
-$mainFont_2: #ababab;
+$mainFont_2: #e2e2e2;
 $mainFont_3: #fb770a;
 $time: #d78f3a;
 $disable: #999999;
@@ -207,7 +207,8 @@ $header_langBtn: #f0cc6d;
     font-size: 12px;
     top: 12px;
     right: -9px;
-    padding-bottom: 1px;
+    padding-bottom: 2px;
+    box-sizing: border-box;
     border-radius: 30px;
     border: 1px solid #ffffff;
     color: #ffffff;
@@ -386,7 +387,7 @@ $deposit_postNum: #ffffff;
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px 10px;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;

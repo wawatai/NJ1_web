@@ -240,6 +240,16 @@
                             height: 20px;
                         }
                     }
+
+                    .remind {
+                        width: 18px;
+                        height: 18px;
+                        @include headerMailRemind;
+                        position: static;
+                        display: flex;
+                        margin-left: 10px;
+                        border: none;
+                    }
                 }
             }
         }
@@ -1914,7 +1924,7 @@
                     height: auto;
                     padding: 22px 0;
                     color: $mainFont_2;
-                    font-size: 15px;
+                    font-size: 16px;
                     font-weight: bold;
                 }
             }
@@ -3637,16 +3647,16 @@
                         box-sizing: border-box;
                         padding: 20px 30px;
 
-                        i {
-                            display: block;
-                            width: 10px;
-                            height: 17px;
-                            cursor: pointer;
+                        // i {
+                        //     display: block;
+                        //     width: 10px;
+                        //     height: 17px;
+                        //     cursor: pointer;
 
-                            &.next {
-                                transform: scaleX(-1);
-                            }
-                        }
+                        //     &.next {
+                        //         transform: scaleX(-1);
+                        //     }
+                        // }
 
                         .box {
                             width: 95%;
@@ -3659,9 +3669,9 @@
                                 display: flex;
 
                                 li {
-                                    width: 127px;
+                                    width: 125px;
                                     height: auto;
-                                    margin-right: 10px;
+                                    margin-right: 15px;
                                     @include depositBtn;
 
                                     i {
@@ -3915,7 +3925,7 @@
                         height: auto;
                         border: solid 1px $Border;
                         box-sizing: border-box;
-                        padding: 12px;
+                        padding: 18px;
 
                         .smallTitle {
                             color: $mainFont_1;
@@ -4813,9 +4823,9 @@
 
                 p:not(.title) {
                     color: $mainFont_2;
-                    font-size: 14px;
+                    font-size: 16px;
                     font-weight: bold;
-                    line-height: 18px;
+                    line-height: 20px;
                 }
 
                 img {

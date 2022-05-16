@@ -226,6 +226,10 @@ $(function(){
         $('.filter')
         .removeClass('display');
     })
+    $(".jumpWindow.betWindow .enterGame button").click(function(){
+        $('.filter')
+        .removeClass('display');
+    })
 
     $(".login .forget").click(function(){
         $('.jumpWindow')

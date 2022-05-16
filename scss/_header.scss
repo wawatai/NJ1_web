@@ -1,8 +1,9 @@
 header {
     width: 100%;
     height: auto;
-    position: relative;
+    position: fixed;
     background: $header_BG_1;
+    z-index: 999;
 
     //上部
     .top {

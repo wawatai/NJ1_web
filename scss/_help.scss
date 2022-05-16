@@ -89,12 +89,12 @@
                             display: flex;
                             align-items: center;
                             font-size: 18px;
-                            font-weight: bold;
-                            color: $choose_Word2;
+                            color: $choose_Word;
     
                             &:hover,&:active,&.active {
                                 background: $choose_BG;
                                 color: $choose_Active;
+                                font-weight: bold;
 
                                 &::before {
                                     display: none;

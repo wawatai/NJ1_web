@@ -36,6 +36,10 @@ html {
         @import "./help";
         @import "./register";
 
+        main {
+            padding-top: 130px;
+        }
+
         .bg {
             position: absolute;
             width: 100%;

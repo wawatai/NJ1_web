@@ -263,6 +263,16 @@ footer .twitter {
   background-size: 100%;
 }
 
+.vipWrap .detailCardBox .cardBg.v2 {
+  background: url("../images/vip_card_2.png") no-repeat;
+  background-size: 100%;
+}
+
+.vipWrap .detailCardBox .cardBg.v3 {
+  background: url("../images/vip_card_3.png") no-repeat;
+  background-size: 100%;
+}
+
 .walletWrap .platformWallet .re_ic {
   background: url("../images/icon/svg/refresh.svg") no-repeat;
   background-size: contain;
@@ -745,8 +755,9 @@ html body::-webkit-scrollbar-track {
 html body header {
   width: 100%;
   height: auto;
-  position: relative;
+  position: fixed;
   background: #1f1f1f;
+  z-index: 999;
 }
 html body header .top {
   width: 100%;
@@ -1015,7 +1026,9 @@ html body header .top .user.alLogin li:not(.platform) button .remind {
   font-size: 12px;
   top: 12px;
   right: -9px;
-  padding-bottom: 1px;
+  padding-bottom: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 30px;
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -2570,7 +2583,7 @@ html body .filter .jumpWindow.pointWindow .content .pageBox {
   margin-top: 10px;
 }
 html body .filter .jumpWindow.pointWindow .content .pageBox p {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 12px;
   font-weight: bold;
 }
@@ -2648,7 +2661,7 @@ html body .filter .jumpWindow.ruleWindow .content .smallTitle:nth-of-type(1) {
   margin-top: 0;
 }
 html body .filter .jumpWindow.ruleWindow .content p:not(.smallTitle) {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 13px;
   font-weight: bold;
   line-height: 22px;
@@ -2738,7 +2751,7 @@ html body .filter .jumpWindow .title i {
 }
 html body .gameWrap {
   padding-bottom: 30px;
-  background-color: #101010;
+  background-color: #070707;
 }
 html body .gameWrap .content {
   width: 100%;
@@ -2964,34 +2977,38 @@ html body .gameWrap .slotCenter .slotBody .nav .search i {
   width: 20px;
   height: 20px;
 }
+html body .gameWrap .slotCenter .slotBody .nav .search i::before {
+  content: "";
+  position: absolute;
+}
 html body .gameWrap .slotCenter .slotBody .nav .search input {
   width: 330px;
   height: 40px;
-  background: #eaeaea;
-  border: none;
-  color: #333333;
-  font-size: 13px;
+  background: #101010;
+  border: solid 1px #ffc13c;
+  color: #ffffff;
+  font-size: 16px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 5px 0 12px;
+  padding-left: 15px;
   padding-left: 40px;
 }
 html body .gameWrap .slotCenter .slotBody .nav .search input::-webkit-input-placeholder {
-  color: #555555;
+  color: #999999;
 }
 html body .gameWrap .slotCenter .slotBody .nav .search input::-moz-placeholder {
-  color: #555555;
+  color: #999999;
 }
 html body .gameWrap .slotCenter .slotBody .nav .search input:-ms-input-placeholder {
-  color: #555555;
+  color: #999999;
 }
 html body .gameWrap .slotCenter .slotBody .nav .search input::-ms-input-placeholder {
-  color: #555555;
+  color: #999999;
 }
 html body .gameWrap .slotCenter .slotBody .nav .search input::placeholder {
-  color: #555555;
+  color: #999999;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox {
   padding: 24px 48px 40px;
@@ -3389,7 +3406,7 @@ html body .eventWrap .eventBody .eventDetail .info {
   padding: 25px 40px;
 }
 html body .eventWrap .eventBody .eventDetail .info p {
-  color: #ababab;
+  color: #e2e2e2;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -3690,6 +3707,39 @@ html body .innerPage .center .innerSide .innerNav li i.dividend_ic {
 html body .innerPage .center .innerSide .innerNav li i.invite_ic {
   width: 20px;
   height: 20px;
+}
+html body .innerPage .center .innerSide .innerNav li .remind {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  top: 12px;
+  right: -9px;
+  padding-bottom: 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background: #ed1c24;
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+  border: none;
+}
+html body .innerPage .center .innerSide .innerNav li .remind.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 html body .innerPage .center .memberWrap {
   width: 880px;
@@ -4621,7 +4671,7 @@ html body .innerPage .center .vipWrap .remindBox ul li {
   list-style: decimal;
 }
 html body .innerPage .center .vipWrap .remindBox ul p {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 13px;
   font-weight: bold;
 }
@@ -5205,7 +5255,7 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
   margin: 6px 0 10px;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form ul li .text {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 5px;
@@ -5532,7 +5582,7 @@ html body .innerPage .center .mailWrap.innerMode .msgTitle span {
   display: inline-block;
   width: 800px;
   font-size: 18px;
-  color: #ababab;
+  color: #e2e2e2;
 }
 html body .innerPage .center .mailWrap.innerMode .msgTitle button {
   width: 11px;
@@ -5545,7 +5595,7 @@ html body .innerPage .center .mailWrap.innerMode .msgTitle button.next {
 html body .innerPage .center .mailWrap.innerMode .date {
   width: 100%;
   font-size: 15px;
-  color: #ababab;
+  color: #e2e2e2;
   padding-bottom: 18px;
   border-bottom: solid 1px #b5833b;
 }
@@ -5553,8 +5603,8 @@ html body .innerPage .center .mailWrap.innerMode .msg {
   width: 100%;
   height: auto;
   padding: 22px 0;
-  color: #ababab;
-  font-size: 15px;
+  color: #e2e2e2;
+  font-size: 16px;
   font-weight: bold;
 }
 html body .innerPage .center .mailWrap .top {
@@ -5956,7 +6006,7 @@ html body .innerPage .center .mailWrap .bottom .list .pageBox {
           align-items: center;
 }
 html body .innerPage .center .mailWrap .bottom .list .pageBox p {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 12px;
   font-weight: bold;
 }
@@ -6131,7 +6181,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div
   color: #d78f3a;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p.day-tips, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p.day-tips {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 14px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span, html body .innerPage .center .eventWrap .eventMiddle .eventBoxAl ul li .header div p span {
@@ -6513,7 +6563,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .t
   display: flex;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap .pageBox p {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 12px;
   font-weight: bold;
 }
@@ -6920,7 +6970,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox .pageBox {
           align-items: center;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .pageBox p {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 12px;
   font-weight: bold;
 }
@@ -7071,7 +7121,7 @@ html body .innerPage .center .dealWrap .bottom .waterBox .pageBox {
           align-items: center;
 }
 html body .innerPage .center .dealWrap .bottom .waterBox .pageBox p {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 12px;
   font-weight: bold;
 }
@@ -7453,7 +7503,7 @@ html body .innerPage .center .betWrap .bottom .fakeTable ul li .pageBox {
           justify-content: center;
 }
 html body .innerPage .center .betWrap .bottom .fakeTable ul li .pageBox p {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 12px;
   font-weight: bold;
 }
@@ -7593,16 +7643,6 @@ html body .innerPage .center .depositWrap .depositMiddle .top .list {
           box-sizing: border-box;
   padding: 20px 30px;
 }
-html body .innerPage .center .depositWrap .depositMiddle .top .list i {
-  display: block;
-  width: 10px;
-  height: 17px;
-  cursor: pointer;
-}
-html body .innerPage .center .depositWrap .depositMiddle .top .list i.next {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
 html body .innerPage .center .depositWrap .depositMiddle .top .list .box {
   width: 95%;
   height: auto;
@@ -7616,9 +7656,9 @@ html body .innerPage .center .depositWrap .depositMiddle .top .list .box ul {
   display: flex;
 }
 html body .innerPage .center .depositWrap .depositMiddle .top .list .box ul li {
-  width: 127px;
+  width: 125px;
   height: auto;
-  margin-right: 10px;
+  margin-right: 15px;
   background: #101010;
   border-radius: 5px;
   border: solid 1px #a88335;
@@ -7639,7 +7679,7 @@ html body .innerPage .center .depositWrap .depositMiddle .top .list .box ul li {
       -ms-flex-direction: column;
           flex-direction: column;
   cursor: pointer;
-  padding: 10px;
+  padding: 5px 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -7992,7 +8032,7 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .remindBox {
   border: solid 1px #b5833b;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 12px;
+  padding: 18px;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .remindBox .smallTitle {
   color: #ffc13c;
@@ -8004,7 +8044,7 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .remindBox .sma
   margin-top: 0;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .remindBox .text {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 14px;
   font-weight: bold;
   line-height: 20px;
@@ -8741,7 +8781,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom ul li .nu
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom ul li .notice {
   font-size: 15px;
   letter-spacing: 2px;
-  color: #ababab;
+  color: #e2e2e2;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form {
   display: none;
@@ -8865,7 +8905,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom .remindBo
   margin-bottom: 5px;
   font-size: 13px;
   letter-spacing: 1px;
-  color: #ababab;
+  color: #e2e2e2;
   font-weight: bold;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom .remindBox div.mar {
@@ -9046,10 +9086,10 @@ html body .innerPage .center .inviteWrap .bottom .title:nth-of-type(1) {
   margin-top: 0;
 }
 html body .innerPage .center .inviteWrap .bottom p:not(.title) {
-  color: #ababab;
-  font-size: 14px;
+  color: #e2e2e2;
+  font-size: 16px;
   font-weight: bold;
-  line-height: 18px;
+  line-height: 20px;
 }
 html body .innerPage .center .inviteWrap .bottom img {
   margin-top: 20px;
@@ -9444,7 +9484,7 @@ html body .innerPage .center .pointWrap .bottom .content .fakeTable ul li .pageB
           justify-content: center;
 }
 html body .innerPage .center .pointWrap .bottom .content .fakeTable ul li .pageBox p {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 12px;
   font-weight: bold;
 }
@@ -9589,7 +9629,7 @@ html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox {
   bottom: 0;
 }
 html body .innerPage .center .pointWrap .bottom .content .recordTable .pageBox p {
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 12px;
   font-weight: bold;
 }
@@ -9734,12 +9774,12 @@ html body .helpPage .center .nav li.box ul li {
       -ms-flex-align: center;
           align-items: center;
   font-size: 18px;
-  font-weight: bold;
-  color: #8f702d;
+  color: #ffc13c;
 }
 html body .helpPage .center .nav li.box ul li:hover, html body .helpPage .center .nav li.box ul li:active, html body .helpPage .center .nav li.box ul li.active {
   background: #101010;
   color: #ff4719;
+  font-weight: bold;
 }
 html body .helpPage .center .nav li.box ul li:hover::before, html body .helpPage .center .nav li.box ul li:active::before, html body .helpPage .center .nav li.box ul li.active::before {
   display: none;
@@ -9777,7 +9817,7 @@ html body .helpPage .center .helpWrap div h3 {
 }
 html body .helpPage .center .helpWrap div p {
   margin-bottom: 10px;
-  color: #ababab;
+  color: #e2e2e2;
   font-size: 16px;
   line-height: 24px;
 }
@@ -10018,6 +10058,9 @@ html body .registerWrap .bigBox .right .checkBtn:hover, html body .registerWrap 
 }
 html body .registerWrap .bigBox .right .checkBtn:last-child {
   margin-top: 10px;
+}
+html body main {
+  padding-top: 130px;
 }
 html body .bg {
   position: absolute;

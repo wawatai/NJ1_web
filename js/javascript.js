@@ -345,7 +345,7 @@ $(function(){
         var n = $(this).index() + 1;
 
         $(".livePage .mainImg")
-        .attr("src","../images/廠商圖/live/liveBG_"+ n +".png");
+        .attr("src","../images/partner/live/liveBG_"+ n +".png");
     })
 })
 

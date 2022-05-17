@@ -21,6 +21,14 @@ header .transferInfo .money i {
     background: url('../images/icon/quick_ic.png') no-repeat;
     background-size: 600%;
 }
+.mainWrap .loveGame .textBox .love {
+    background: url('../images/icon/svg/love1.svg') no-repeat;
+    background-size: 100%;
+}
+.mainWrap .loveGame .textBox .love.active {
+    background: url('../images/icon/svg/love2.svg') no-repeat;
+    background-size: 100%;
+}
 
 //側邊 sideBar img
 .sideBar .inviteBtn a {

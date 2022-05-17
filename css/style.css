@@ -34,6 +34,16 @@ header .transferInfo .money i {
   background-size: 600%;
 }
 
+.mainWrap .loveGame .textBox .love {
+  background: url("../images/icon/svg/love1.svg") no-repeat;
+  background-size: 100%;
+}
+
+.mainWrap .loveGame .textBox .love.active {
+  background: url("../images/icon/svg/love2.svg") no-repeat;
+  background-size: 100%;
+}
+
 .sideBar .inviteBtn a {
   background: url("../images/icon/invite.gif") no-repeat;
   background-size: contain;
@@ -1607,29 +1617,41 @@ html body .mainWrap .center .quickBox li button .inner p {
   color: #181818;
 }
 html body .mainWrap .center .typeList {
+  display: none;
   max-width: 1650px;
   min-width: 1400px;
   height: auto;
-  margin: 40px 0 60px;
-  display: -ms-grid;
-  display: grid;
+  margin: 40px auto 60px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 60px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-html body .mainWrap .center .typeList li {
+html body .mainWrap .center .typeList.loveMode {
+  max-width: unset;
+  width: 1400px;
+  padding: 0 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+html body .mainWrap .center .typeList.display {
+  display: -ms-grid;
+  display: grid;
+}
+html body .mainWrap .center .typeList li:not(.loveGame) {
   width: auto;
   height: auto;
   position: relative;
   cursor: pointer;
   display: none;
 }
-html body .mainWrap .center .typeList li.display {
+html body .mainWrap .center .typeList li:not(.loveGame).display {
   display: block;
 }
-html body .mainWrap .center .typeList li:nth-of-type(4n) {
+html body .mainWrap .center .typeList li:not(.loveGame):nth-of-type(4n) {
   margin-right: 0px;
 }
-html body .mainWrap .center .typeList li p {
+html body .mainWrap .center .typeList li:not(.loveGame) p {
   color: #f9d369;
   width: 100%;
   text-align: center;
@@ -1637,7 +1659,7 @@ html body .mainWrap .center .typeList li p {
   font-weight: bold;
   padding-top: 10px;
 }
-html body .mainWrap .center .typeList li .fixBox {
+html body .mainWrap .center .typeList li:not(.loveGame) .fixBox {
   display: none;
   position: absolute;
   width: 100%;
@@ -1658,20 +1680,117 @@ html body .mainWrap .center .typeList li .fixBox {
   left: 0;
   cursor: not-allowed;
 }
-html body .mainWrap .center .typeList li .fixBox.display {
+html body .mainWrap .center .typeList li:not(.loveGame) .fixBox.display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-html body .mainWrap .center .typeList li .fixBox p {
+html body .mainWrap .center .typeList li:not(.loveGame) .fixBox p {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
 }
-html body .mainWrap .center .typeList li .fixBox p.title {
+html body .mainWrap .center .typeList li:not(.loveGame) .fixBox p.title {
   margin-bottom: 30px;
   font-size: 26px;
+}
+html body .mainWrap .center .typeList .loveGame {
+  width: auto;
+  height: auto;
+  border: solid 1px #ffc13c;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0px;
+  position: relative;
+}
+html body .mainWrap .center .typeList .loveGame:hover .btnBox, html body .mainWrap .center .typeList .loveGame:active .btnBox, html body .mainWrap .center .typeList .loveGame.active .btnBox {
+  opacity: 1;
+}
+html body .mainWrap .center .typeList .loveGame .textBox {
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  border-top: solid 1px #ffc13c;
+  background: #1f1f1f;
+}
+html body .mainWrap .center .typeList .loveGame .textBox p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffc13c;
+}
+html body .mainWrap .center .typeList .loveGame .textBox .love {
+  width: 23px;
+  height: 21px;
+}
+html body .mainWrap .center .typeList .loveGame .btnBox {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  background: #0000009e;
+  top: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 0;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+html body .mainWrap .center .typeList .loveGame .btnBox button {
+  width: 140px;
+  height: 35px;
+  background: #f5951f;
+  border-radius: 5px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+html body .mainWrap .center .typeList .loveGame .btnBox button:hover, html body .mainWrap .center .typeList .loveGame .btnBox button:active, html body .mainWrap .center .typeList .loveGame .btnBox button.active {
+  background: #fb770a;
+  color: #ffffff;
+}
+html body .mainWrap .center .typeList .loveGame .btnBox button:nth-of-type(2) {
+  background: #30ebff;
+  border-radius: 5px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+html body .mainWrap .center .typeList .loveGame .btnBox button:nth-of-type(2):hover, html body .mainWrap .center .typeList .loveGame .btnBox button:nth-of-type(2):active, html body .mainWrap .center .typeList .loveGame .btnBox button:nth-of-type(2).active {
+  background: #0a92be;
+  color: #ffffff;
 }
 html body footer {
   width: 100%;
@@ -3416,9 +3535,17 @@ html body .eventWrap .eventBody .eventDetail .info p.infoTitle {
   margin-bottom: 30px;
   color: #fb770a;
 }
+html body .eventWrap .eventBody .eventDetail .info p.smallTitle {
+  font-size: 16px;
+  margin: 30px 0 20px;
+  color: #d78f3a;
+}
 html body .eventWrap .eventBody .eventDetail .info p.remind {
   color: #35b751;
   margin-bottom: 20px;
+}
+html body .eventWrap .eventBody .eventDetail .info p.mar {
+  margin-bottom: 30px;
 }
 html body .eventWrap .eventBody .eventDetail .detailFooter {
   width: 100%;

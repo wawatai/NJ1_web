@@ -174,10 +174,13 @@ $(function(){
 //mainWrap
 $(function(){
     $(".quickBox .love").click(function(){
-        $(".typeList li")
-        .addClass("display");
+        $(".typeList")
+        .toggleClass("display")
     })
-
+    $(".loveGame .love").click(function(){
+        $(this)
+        .toggleClass("active");
+    })
 
     $(".quickBox .sport").click(function(){
         $(".typeList li")
@@ -398,9 +401,17 @@ $(function(){
 
 //eventList+eventDetail 切換
 $(function(){
-    $('.eventBox .btnBox button').click(function(){
+    $('.eventBox .btnBox button.forEvent_1').click(function(){
         $('.eventList').removeClass('display');
-        $('.eventDetail').addClass('display');
+        $('.eventDetail.event_1').addClass('display');
+    })
+    $('.eventBox .btnBox button.forEvent_2').click(function(){
+        $('.eventList').removeClass('display');
+        $('.eventDetail.event_2').addClass('display');
+    })
+    $('.eventBox .btnBox button.forEvent_3').click(function(){
+        $('.eventList').removeClass('display');
+        $('.eventDetail.event_3').addClass('display');
     })
 
     $('.eventDetail .back').click(function(){

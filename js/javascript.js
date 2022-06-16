@@ -760,3 +760,18 @@ $(function(){
         .toggleClass("active");
     })
 })
+
+//register
+$(function(){
+    var phone = $(".registerWrap .phone")
+    var btn = $(".registerWrap .codeBtn");
+
+    $(phone).focus(function(){
+        $(btn)
+        .attr("disabled",false);
+    })
+    $(phone).blur(function(){
+        $(btn)
+        .attr("disabled",true);
+    })
+})

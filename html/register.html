@@ -16,43 +16,78 @@
     <main>
         <div class="registerWrap">
             <div class="bigBox">
-                <div class="left">
-                    <img src="../images/icon/logo.png">
-                </div>
-                <form class="right">
-                    <div class="title">
+                <div class="title">
+                    <img src="../images/icon/logo.png" class="logo">
+                    <p>
                         <i class="register_ic"></i>
                         登録
-                    </div>
-                    <label>
-                        <input type="text" placeholder="アカウントを入力してください">
-                        <p class="err">
-                            アカウント番号には、英字（大文字と小文字の両方）が含ま
-                            れている必要があります。少なくとも6文字必要です</p>
-                    </label>
-                    <label>
-                        <input type="password" placeholder="パスワードを入力してください">
-                        <i class="eye"></i>
-                        <p class="err">
-                            英語の数字と限定された特殊記号（@._$#%^&*+-）を使用
-                            できます
-                        </p>
-                    </label>
-                    <label>
-                        <input type="password" placeholder="パスワードを確認">
-                    </label>
-                    <label>
-                        <input type="text" placeholder="招待コードを入力してください">
-                        <p class="err">推奨アフィリエイトコードがない場合は記入しないでください</p>
-                    </label>
+                    </p>
+                </div>
+                <div class="inputBox">
+                    <form>
+                        <label>
+                            <em>※</em>
+                            <input type="text" placeholder="アカウントID">
+                            <p class="remind">アカウント番号には、英字（大文字と小文字の両方）が含まれている必要があります。少なくとも6文字必要です</p>
+                        </label>
+                        <label>
+                            <em>※</em>
+                            <input type="text" placeholder="パスワード">
+                            <p class="remind">英語の数字と限定された特殊記号（@._$#%^&*+-）を使用できます</p>
+                            <i class="eye_ic"></i>
+                        </label>
+                        <label>
+                            <em>※</em>
+                            <input type="text" placeholder="パスワード再確認">
+                        </label>
+                        <label>
+                            <em>※</em>
+                            <input type="text" placeholder="お名前">
+                        </label>
+                        <label>
+                            <em>※</em>
+                            <input type="text" placeholder="yyyy/mmm/dd">
+                            <i class="date_ic"></i>
+                        </label>
+                    </form>
+                    <form>
+                        <label>
+                            <em>※</em>
+                            <input type="text" placeholder="携帯電話" class="phone">
+                            <button class="codeBtn" disabled>認証コードを取得する</button>
+                        </label>
+                        <label>
+                            <em>※</em>
+                            <input type="text" placeholder="携帯認証コード">
+                        </label>
+                        <label>
+                            <em>※</em>
+                            <input type="text" placeholder="メールアドレス">
+                        </label>
+                        <label>
+                            <input type="text" placeholder="招待コードを入力してください">
+                            <p class="remind">推奨アフィリエイトコードがない場合は記入しないでください</p>
+                        </label>
+                        <label>
+                            <input type="text" placeholder="LINE ID" class="line">
+                            <i class="line_ic"></i>
+                        </label>
+                    </form>
+                </div>
+                <div class="check">
                     <div class="checkBox">
                         <input type="checkbox">
-                        <p>全部読んで同意する<span>利用規約とプライバシーポリシー</span></p>
-                        <p class="err">利用規約とプライバシーポリシーを読み、同意してください</p>
+                        <p>
+                            全部読んで同意する
+                            <span class="rule">利用規約とプライバシーポリシー</span>
+                        </p>
                     </div>
-                    <button class="checkBtn" disabled>確認</button>
-                    <button class="checkBtn" type="button" onclick="window.location.href='../index.html'">お試し</button>
-                </form>
+                    <p class="remind">利用規約とプライバシーポリシーを読み、同意してください</p>
+                </div>
+                <div class="btnBox">
+                    <button onclick="window.location.href='../index.html'">お試し</button>
+                    <button>確認</button>
+                </div>
             </div>
         </div>
     </main>

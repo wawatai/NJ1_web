@@ -255,10 +255,10 @@ $gameWrap_Word: #ffc13c;
 $gameWrap_Border: #ffc13c;
 
 //register
-$register_BG: linear-gradient(to top,#d2ae63 8%,#f1dfa7 53%,#f1dfa7 65%,#fffde1 96%);
 $register_Border: #fff0ac;
-$register_Title: #000000;
-$register_Icon: linear-gradient(-45deg,#fdefd9 0%,#c29054 50%,#fdefd9 100%);
+$register_Title: #ffdd85;
+$register_TitleBG: linear-gradient(to top,#141414 0%,#272727 100%);
+$register_BG: linear-gradient(to top,#d2ae63 8%,#f1dfa7 53%,#f1dfa7 65%,#fffde1 96%);
 
 //vipCard字樣式
 @mixin cardWord {
@@ -628,7 +628,7 @@ $withdrawal_limitWord: #e34119;
 button:disabled {
     background: #585858!important;
     border: none!important;
-    color: #999999 !important;
+    color: #ffffff !important;
     box-shadow: none !important;
     cursor: not-allowed;
 }

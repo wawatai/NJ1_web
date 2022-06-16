@@ -2,7 +2,7 @@
 button:disabled {
   background: #585858 !important;
   border: none !important;
-  color: #999999 !important;
+  color: #ffffff !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   cursor: not-allowed;
@@ -496,9 +496,19 @@ footer .twitter {
   background-size: contain;
 }
 
-.registerWrap .eye {
+.registerWrap .eye_ic {
   background: url("../images/icon/eye.png") no-repeat;
   background-size: 100%;
+}
+
+.registerWrap .date_ic {
+  background: url("../images/icon/date.png") no-repeat;
+  background-size: contain;
+}
+
+.registerWrap .line_ic {
+  background: url("../images/icon/line_ic.png") no-repeat;
+  background-size: contain;
 }
 
 .inviteWrap .left .copy::before {
@@ -643,8 +653,10 @@ footer .top img {
      object-fit: cover;
 }
 
-.registerWrap .left img {
-  width: 250px;
+.registerWrap .title img {
+  width: 125px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .rightSide .smallBoard img {
@@ -10012,79 +10024,92 @@ html body .registerWrap {
           justify-content: center;
 }
 html body .registerWrap .bigBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: auto;
+  height: auto;
   border-radius: 17px;
   overflow: hidden;
   border: solid 1px #fff0ac;
-}
-html body .registerWrap .bigBox .left {
-  width: 432px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #0000009e;
-}
-html body .registerWrap .bigBox .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 432px;
-  padding: 32px 0 37px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #d2ae63), color-stop(53%, #f1dfa7), color-stop(65%, #f1dfa7), color-stop(96%, #fffde1));
   background: linear-gradient(to top, #d2ae63 8%, #f1dfa7 53%, #f1dfa7 65%, #fffde1 96%);
 }
-html body .registerWrap .bigBox .right .title {
+html body .registerWrap .bigBox .title {
+  width: 865px;
+  height: 82px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#141414), to(#272727));
+  background: linear-gradient(to top, #141414 0%, #272727 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  height: auto;
+}
+html body .registerWrap .bigBox .title p {
+  color: #ffdd85;
   font-size: 25px;
   font-weight: bold;
-  letter-spacing: 2px;
-  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
 }
-html body .registerWrap .bigBox .right .title i {
+html body .registerWrap .bigBox .title p i {
   display: block;
   width: 44px;
   height: 44px;
   margin-right: 10px;
 }
-html body .registerWrap .bigBox .right label {
-  position: relative;
-  margin-bottom: 30px;
+html body .registerWrap .bigBox .inputBox {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 42px 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-html body .registerWrap .bigBox .right label input {
-  width: 332px;
-  height: 41px;
+html body .registerWrap .bigBox .inputBox form {
+  width: 48%;
+  height: auto;
+}
+html body .registerWrap .bigBox .inputBox form label {
+  width: 100%;
+  height: auto;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+html body .registerWrap .bigBox .inputBox form label:last-child {
+  margin: 0;
+}
+html body .registerWrap .bigBox .inputBox form label em {
+  color: #e11515;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+html body .registerWrap .bigBox .inputBox form label input {
+  width: 100%;
+  height: 42px;
   background: #101010;
   border: solid 1px #ffc13c;
   color: #ffffff;
@@ -10095,42 +10120,71 @@ html body .registerWrap .bigBox .right label input {
           box-sizing: border-box;
   padding-left: 15px;
 }
-html body .registerWrap .bigBox .right label input::-webkit-input-placeholder {
+html body .registerWrap .bigBox .inputBox form label input::-webkit-input-placeholder {
   color: #999999;
 }
-html body .registerWrap .bigBox .right label input::-moz-placeholder {
+html body .registerWrap .bigBox .inputBox form label input::-moz-placeholder {
   color: #999999;
 }
-html body .registerWrap .bigBox .right label input:-ms-input-placeholder {
+html body .registerWrap .bigBox .inputBox form label input:-ms-input-placeholder {
   color: #999999;
 }
-html body .registerWrap .bigBox .right label input::-ms-input-placeholder {
+html body .registerWrap .bigBox .inputBox form label input::-ms-input-placeholder {
   color: #999999;
 }
-html body .registerWrap .bigBox .right label input::placeholder {
+html body .registerWrap .bigBox .inputBox form label input::placeholder {
   color: #999999;
 }
-html body .registerWrap .bigBox .right label .eye {
-  display: block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 10px;
-  cursor: pointer;
+html body .registerWrap .bigBox .inputBox form label input.line {
+  padding-left: 50px;
 }
-html body .registerWrap .bigBox .right label .err {
-  position: absolute;
-  bottom: -26px;
-  left: 0;
+html body .registerWrap .bigBox .inputBox form label .remind {
+  color: #e11515;
   font-size: 12px;
   font-weight: bold;
-  color: #e11515;
+  position: absolute;
+  left: 15px;
+  top: 42px;
 }
-html body .registerWrap .bigBox .right .checkBox {
-  width: 332px;
+html body .registerWrap .bigBox .inputBox form label .date_ic,
+html body .registerWrap .bigBox .inputBox form label .eye_ic {
+  position: absolute;
+  display: block;
+  width: 17px;
+  height: 17px;
+  right: 20px;
+}
+html body .registerWrap .bigBox .inputBox form label .line_ic {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  left: 20px;
+}
+html body .registerWrap .bigBox .inputBox form label .codeBtn {
+  width: 142px;
+  height: 32px;
+  background: #ffbb17;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  text-align: center;
+  position: absolute;
+  right: 5px;
+  font-size: 12px;
+}
+html body .registerWrap .bigBox .inputBox form label .codeBtn:hover, html body .registerWrap .bigBox .inputBox form label .codeBtn:active, html body .registerWrap .bigBox .inputBox form label .codeBtn.active {
+  background: #ff4719;
+  color: #ffffff;
+}
+html body .registerWrap .bigBox .inputBox form label .codeBtn:hover::before, html body .registerWrap .bigBox .inputBox form label .codeBtn:active::before, html body .registerWrap .bigBox .inputBox form label .codeBtn.active::before {
+  display: none;
+}
+html body .registerWrap .bigBox .check {
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10138,39 +10192,62 @@ html body .registerWrap .bigBox .right .checkBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 23px 0 32px;
-  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
 }
-html body .registerWrap .bigBox .right .checkBox input {
-  width: 16px;
-  height: 16px;
+html body .registerWrap .bigBox .check .checkBox {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .registerWrap .bigBox .check .checkBox input {
   margin-right: 10px;
 }
-html body .registerWrap .bigBox .right .checkBox p {
+html body .registerWrap .bigBox .check .checkBox p {
   font-size: 16px;
   font-weight: bold;
-  color: #000000;
 }
-html body .registerWrap .bigBox .right .checkBox p span {
-  display: block;
+html body .registerWrap .bigBox .check .checkBox p span {
   color: #1c39af;
-  padding-top: 5px;
-  text-decoration: underline;
+  margin-left: 5px;
   cursor: pointer;
 }
-html body .registerWrap .bigBox .right .checkBox p.err {
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  font-size: 12px;
+html body .registerWrap .bigBox .check .remind {
+  width: 100%;
+  height: auto;
   color: #e11515;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
 }
-html body .registerWrap .bigBox .right .checkBtn {
-  width: 332px;
-  height: 41px;
+html body .registerWrap .bigBox .btnBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 60px 30px;
+}
+html body .registerWrap .bigBox .btnBox button {
+  width: calc(48% - 15px);
+  height: 42px;
   background: -webkit-gradient(linear, left top, right top, from(#ff4b33), color-stop(98%, #d8001f));
   background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
   border: none;
@@ -10180,11 +10257,11 @@ html body .registerWrap .bigBox .right .checkBtn {
   letter-spacing: 1px;
   border-radius: 5px;
 }
-html body .registerWrap .bigBox .right .checkBtn:hover, html body .registerWrap .bigBox .right .checkBtn:active, html body .registerWrap .bigBox .right .checkBtn.active {
+html body .registerWrap .bigBox .btnBox button:hover, html body .registerWrap .bigBox .btnBox button:active, html body .registerWrap .bigBox .btnBox button.active {
   background: #b9001b;
 }
-html body .registerWrap .bigBox .right .checkBtn:last-child {
-  margin-top: 10px;
+html body .registerWrap .bigBox .btnBox button:first-child {
+  margin-left: 15px;
 }
 html body main {
   padding-top: 130px;

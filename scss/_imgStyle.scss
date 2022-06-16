@@ -447,9 +447,17 @@ footer .twitter {
     background: url('../images/icon/register_ic.png');
     background-size: contain;
 }
-.registerWrap .eye {
+.registerWrap .eye_ic {
     background: url('../images/icon/eye.png') no-repeat;
     background-size: 100%;
+}
+.registerWrap .date_ic {
+    background: url('../images/icon/date.png') no-repeat;
+    background-size: contain;
+}
+.registerWrap .line_ic {
+    background: url('../images/icon/line_ic.png') no-repeat;
+    background-size: contain;
 }
 
 //invite
@@ -606,8 +614,9 @@ footer .top img {
 }
 
 //register .logo
-.registerWrap .left img {
-    width: 250px;
+.registerWrap .title img {
+    width: 125px;
+    object-fit: contain;
 }
 
 //右側小活動中心

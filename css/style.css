@@ -10407,7 +10407,7 @@ html body .registerWrap .bigBox .inputBox form label:last-child {
   margin: 0;
 }
 html body .registerWrap .bigBox .inputBox form label .smallTitle {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -10499,7 +10499,7 @@ html body .registerWrap .bigBox .inputBox form label div .codeBtn:hover::before,
 html body .registerWrap .bigBox .inputBox form label .remind {
   width: 340px;
   color: #e11515;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
   line-height: 15px;
 }

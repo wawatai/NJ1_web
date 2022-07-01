@@ -59,6 +59,162 @@ footer .twitter {
   background-size: contain;
 }
 
+footer .payments .bank {
+  background: url("../images/partner/footer_payments/bank.png") no-repeat center;
+}
+
+footer .payments .usdt {
+  background: url("../images/partner/footer_payments/usdt.png") no-repeat center;
+}
+
+footer .payments .vega {
+  background: url("../images/partner/footer_payments/vega.png") no-repeat center;
+}
+
+footer .payments .imove {
+  background: url("../images/partner/footer_payments/imove.png") no-repeat center;
+}
+
+footer .payments .sticpay {
+  background: url("../images/partner/footer_payments/sticpay.png") no-repeat center;
+}
+
+footer .payments .iwallet {
+  background: url("../images/partner/footer_payments/iwallet.png") no-repeat center;
+}
+
+footer .payments .tigerpay {
+  background: url("../images/partner/footer_payments/tigerpay.png") no-repeat center;
+}
+
+footer .partner .ag {
+  background: url("../images/partner/footer_partner/ag.png") no-repeat center;
+}
+
+footer .partner .sa {
+  background: url("../images/partner/footer_partner/sa.png") no-repeat center;
+}
+
+footer .partner .dg {
+  background: url("../images/partner/footer_partner/dg.png") no-repeat center;
+}
+
+footer .partner .tpg {
+  background: url("../images/partner/footer_partner/tpg.png") no-repeat center;
+}
+
+footer .partner .og {
+  background: url("../images/partner/footer_partner/og.png") no-repeat center;
+}
+
+footer .partner .sp {
+  background: url("../images/partner/footer_partner/sp.png") no-repeat center;
+}
+
+footer .partner .mg {
+  background: url("../images/partner/footer_partner/mg.png") no-repeat center;
+}
+
+footer .partner .pp {
+  background: url("../images/partner/footer_partner/pp.png") no-repeat center;
+}
+
+footer .partner .gh {
+  background: url("../images/partner/footer_partner/gh.png") no-repeat center;
+}
+
+footer .partner .elk {
+  background: url("../images/partner/footer_partner/elk.png") no-repeat center;
+}
+
+footer .partner .ftp {
+  background: url("../images/partner/footer_partner/ftp.png") no-repeat center;
+}
+
+footer .partner .pg {
+  background: url("../images/partner/footer_partner/pg.png") no-repeat center;
+}
+
+footer .partner .bng {
+  background: url("../images/partner/footer_partner/bng.png") no-repeat center;
+}
+
+footer .partner .ab {
+  background: url("../images/partner/footer_partner/ab.png") no-repeat center;
+}
+
+footer .partner .pls {
+  background: url("../images/partner/footer_partner/pls.png") no-repeat center;
+}
+
+footer .partner .rsg {
+  background: url("../images/partner/footer_partner/rsg.png") no-repeat center;
+}
+
+footer .partner .bp {
+  background: url("../images/partner/footer_partner/bp.png") no-repeat center;
+}
+
+footer .partner .redtiger {
+  background: url("../images/partner/footer_partner/redtiger.png") no-repeat center;
+}
+
+footer .partner .ifun {
+  background: url("../images/partner/footer_partner/ifun.png") no-repeat center;
+}
+
+footer .partner .redrake {
+  background: url("../images/partner/footer_partner/redrake.png") no-repeat center;
+}
+
+footer .partner .ely {
+  background: url("../images/partner/footer_partner/ely.png") no-repeat center;
+}
+
+footer .partner .atux {
+  background: url("../images/partner/footer_partner/atux.png") no-repeat center;
+}
+
+footer .partner .evoplay {
+  background: url("../images/partner/footer_partner/evoplay.png") no-repeat center;
+}
+
+footer .partner .sport {
+  background: url("../images/partner/footer_partner/sport.png") no-repeat center;
+}
+
+footer .partner .png {
+  background: url("../images/partner/footer_partner/png.png") no-repeat center;
+}
+
+footer .partner .relax {
+  background: url("../images/partner/footer_partner/relax.png") no-repeat center;
+}
+
+footer .partner .wm {
+  background: url("../images/partner/footer_partner/wm.png") no-repeat center;
+}
+
+footer .partner .ygg {
+  background: url("../images/partner/footer_partner/ygg.png") no-repeat center;
+}
+
+footer .partner .net {
+  background: url("../images/partner/footer_partner/net.png") no-repeat center;
+}
+
+footer .partner .jili {
+  background: url("../images/partner/footer_partner/jili.png") no-repeat center;
+}
+
+footer .partner .nolimit {
+  background: url("../images/partner/footer_partner/nolimit.png") no-repeat center;
+}
+
+footer .partner .evo {
+  background: url("../images/partner/footer_partner/evo.png") no-repeat center;
+}
+
 .jumpWindow .close_ic {
   background: url("../images/icon/svg/close_w.svg") no-repeat;
   background-size: 100%;
@@ -585,11 +741,6 @@ header .topGameList .hot li div img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-footer .top img {
-  width: auto;
-  height: auto;
 }
 
 .gameWrap .mainImg {
@@ -1810,17 +1961,171 @@ html body footer {
 }
 html body footer .top {
   width: 100%;
-  height: 87px;
+  height: auto;
   background: #2c2c2c;
+}
+html body footer .top .title {
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 20px 0 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body footer .top .title p {
+  color: #fefefe;
+  font-size: 14px;
+  font-weight: bold;
+}
+html body footer .top .title p:nth-of-type(2) {
+  margin: 0 10px;
+}
+html body footer .top .title p:nth-of-type(3) {
+  color: #b1b1b1;
+}
+html body footer .top .box {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+html body footer .top .box div {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0 15px;
+}
+html body footer .top .payments {
+  width: 1350px;
+  height: auto;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+}
+html body footer .top .payments .box div {
+  height: 35px;
+}
+html body footer .top .payments .box div.bank {
+  width: 114px;
+}
+html body footer .top .payments .box div.imove {
+  width: 110px;
+}
+html body footer .top .payments .box div.iwallet {
+  width: 112px;
+}
+html body footer .top .payments .box div.sticpay {
+  width: 111px;
+}
+html body footer .top .payments .box div.tigerpay {
+  width: 135px;
+}
+html body footer .top .payments .box div.usdt {
+  width: 99px;
+}
+html body footer .top .payments .box div.vega {
+  width: 163px;
+}
+html body footer .top .partner {
+  width: 1350px;
+  height: auto;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+}
+html body footer .top .partner .box div {
+  height: 46px;
+}
+html body footer .top .partner .box div.ab {
+  width: 100px;
+}
+html body footer .top .partner .box div.ag {
+  width: 109px;
+}
+html body footer .top .partner .box div.atux, html body footer .top .partner .box div.ftp {
+  width: 140px;
+}
+html body footer .top .partner .box div.bng {
+  width: 102px;
+}
+html body footer .top .partner .box div.bp {
+  width: 142px;
+}
+html body footer .top .partner .box div.dg {
+  width: 75px;
+}
+html body footer .top .partner .box div.elk {
+  width: 96px;
+}
+html body footer .top .partner .box div.ely, html body footer .top .partner .box div.evo {
+  width: 137px;
+}
+html body footer .top .partner .box div.evoplay, html body footer .top .partner .box div.sp {
+  width: 124px;
+}
+html body footer .top .partner .box div.gh {
+  width: 58px;
+}
+html body footer .top .partner .box div.ifun, html body footer .top .partner .box div.pg {
+  width: 126px;
+}
+html body footer .top .partner .box div.jili {
+  width: 73px;
+}
+html body footer .top .partner .box div.mg {
+  width: 135px;
+}
+html body footer .top .partner .box div.net {
+  width: 92px;
+}
+html body footer .top .partner .box div.nolimit {
+  width: 121px;
+}
+html body footer .top .partner .box div.og {
+  width: 52px;
+}
+html body footer .top .partner .box div.pls {
+  width: 173px;
+}
+html body footer .top .partner .box div.png {
+  width: 115px;
+}
+html body footer .top .partner .box div.pp {
+  width: 95px;
+}
+html body footer .top .partner .box div.qs {
+  width: 111px;
+}
+html body footer .top .partner .box div.redrake {
+  width: 77px;
+}
+html body footer .top .partner .box div.redtiger, html body footer .top .partner .box div.sa {
+  width: 103px;
+}
+html body footer .top .partner .box div.relax {
+  width: 101px;
+}
+html body footer .top .partner .box div.rsg {
+  width: 70px;
+}
+html body footer .top .partner .box div.sport {
+  width: 97px;
+}
+html body footer .top .partner .box div.tpg {
+  width: 109px;
+}
+html body footer .top .partner .box div.wm {
+  width: 40px;
+}
+html body footer .top .partner .box div.ygg {
+  width: 133px;
 }
 html body footer .footerList {
   width: 100%;
@@ -10092,22 +10397,38 @@ html body .registerWrap .bigBox .inputBox form label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
 }
 html body .registerWrap .bigBox .inputBox form label:last-child {
   margin: 0;
 }
-html body .registerWrap .bigBox .inputBox form label em {
+html body .registerWrap .bigBox .inputBox form label .smallTitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+html body .registerWrap .bigBox .inputBox form label div {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .registerWrap .bigBox .inputBox form label div em {
   color: #e11515;
   font-size: 14px;
   font-weight: bold;
   position: absolute;
   left: 0;
 }
-html body .registerWrap .bigBox .inputBox form label input {
+html body .registerWrap .bigBox .inputBox form label div input {
   width: 100%;
   height: 42px;
   background: #101010;
@@ -10120,48 +10441,40 @@ html body .registerWrap .bigBox .inputBox form label input {
           box-sizing: border-box;
   padding-left: 15px;
 }
-html body .registerWrap .bigBox .inputBox form label input::-webkit-input-placeholder {
+html body .registerWrap .bigBox .inputBox form label div input::-webkit-input-placeholder {
   color: #999999;
 }
-html body .registerWrap .bigBox .inputBox form label input::-moz-placeholder {
+html body .registerWrap .bigBox .inputBox form label div input::-moz-placeholder {
   color: #999999;
 }
-html body .registerWrap .bigBox .inputBox form label input:-ms-input-placeholder {
+html body .registerWrap .bigBox .inputBox form label div input:-ms-input-placeholder {
   color: #999999;
 }
-html body .registerWrap .bigBox .inputBox form label input::-ms-input-placeholder {
+html body .registerWrap .bigBox .inputBox form label div input::-ms-input-placeholder {
   color: #999999;
 }
-html body .registerWrap .bigBox .inputBox form label input::placeholder {
+html body .registerWrap .bigBox .inputBox form label div input::placeholder {
   color: #999999;
 }
-html body .registerWrap .bigBox .inputBox form label input.line {
+html body .registerWrap .bigBox .inputBox form label div input.line {
   padding-left: 50px;
 }
-html body .registerWrap .bigBox .inputBox form label .remind {
-  color: #e11515;
-  font-size: 12px;
-  font-weight: bold;
-  position: absolute;
-  left: 15px;
-  top: 42px;
-}
-html body .registerWrap .bigBox .inputBox form label .date_ic,
-html body .registerWrap .bigBox .inputBox form label .eye_ic {
+html body .registerWrap .bigBox .inputBox form label div .date_ic,
+html body .registerWrap .bigBox .inputBox form label div .eye_ic {
   position: absolute;
   display: block;
   width: 17px;
   height: 17px;
   right: 20px;
 }
-html body .registerWrap .bigBox .inputBox form label .line_ic {
+html body .registerWrap .bigBox .inputBox form label div .line_ic {
   position: absolute;
   display: block;
   width: 32px;
   height: 32px;
   left: 20px;
 }
-html body .registerWrap .bigBox .inputBox form label .codeBtn {
+html body .registerWrap .bigBox .inputBox form label div .codeBtn {
   width: 142px;
   height: 32px;
   background: #ffbb17;
@@ -10176,12 +10489,19 @@ html body .registerWrap .bigBox .inputBox form label .codeBtn {
   right: 5px;
   font-size: 12px;
 }
-html body .registerWrap .bigBox .inputBox form label .codeBtn:hover, html body .registerWrap .bigBox .inputBox form label .codeBtn:active, html body .registerWrap .bigBox .inputBox form label .codeBtn.active {
+html body .registerWrap .bigBox .inputBox form label div .codeBtn:hover, html body .registerWrap .bigBox .inputBox form label div .codeBtn:active, html body .registerWrap .bigBox .inputBox form label div .codeBtn.active {
   background: #ff4719;
   color: #ffffff;
 }
-html body .registerWrap .bigBox .inputBox form label .codeBtn:hover::before, html body .registerWrap .bigBox .inputBox form label .codeBtn:active::before, html body .registerWrap .bigBox .inputBox form label .codeBtn.active::before {
+html body .registerWrap .bigBox .inputBox form label div .codeBtn:hover::before, html body .registerWrap .bigBox .inputBox form label div .codeBtn:active::before, html body .registerWrap .bigBox .inputBox form label div .codeBtn.active::before {
   display: none;
+}
+html body .registerWrap .bigBox .inputBox form label .remind {
+  width: 340px;
+  color: #e11515;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
 }
 html body .registerWrap .bigBox .check {
   width: 100%;

@@ -60,64 +60,79 @@
                     box-sizing: border-box;
                     padding-left: 15px;
                     display: flex;
-                    align-items: center;
-                    margin-bottom: 30px;
+                    flex-direction: column;
+                    margin-bottom: 10px;
 
                     &:last-child {
                         margin: 0;
                     }
-
-                    em {
-                        color: $remind_sp;
+                    
+                    .smallTitle {
                         font-size: 14px;
                         font-weight: bold;
-                        position: absolute;
-                        left: 0;
+                        margin-bottom: 5px;
                     }
 
-                    input {
+                    div {
                         width: 100%;
-                        height: 42px;
-                        @include mainInput;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
 
-                        &.line {
-                            padding-left: 50px;
+                        em {
+                            color: $remind_sp;
+                            font-size: 14px;
+                            font-weight: bold;
+                            position: absolute;
+                            left: 0;
+                        }
+    
+                        input {
+                            width: 100%;
+                            height: 42px;
+                            @include mainInput;
+    
+                            &.line {
+                                padding-left: 50px;
+                            }
+                        }
+
+                        .date_ic,
+                        .eye_ic {
+                            position: absolute;
+                            display: block;
+                            width: 17px;
+                            height: 17px;
+                            right: 20px;
+                        }
+
+                        .line_ic {
+                            position: absolute;
+                            display: block;
+                            width: 32px;
+                            height: 32px;
+                            left: 20px;
+                        }
+
+                        .codeBtn {
+                            width: 142px;
+                            height: 32px;
+                            @include footerBtn;
+                            position: absolute;
+                            right: 5px;
+                            font-size: 12px;
                         }
                     }
 
                     .remind {
+                        width: 340px;
                         color: $remind_sp;
                         font-size: 12px;
                         font-weight: bold;
-                        position: absolute;
-                        left: 15px;
-                        top: 42px;
-                    }
-
-                    .date_ic,
-                    .eye_ic {
-                        position: absolute;
-                        display: block;
-                        width: 17px;
-                        height: 17px;
-                        right: 20px;
-                    }
-
-                    .line_ic {
-                        position: absolute;
-                        display: block;
-                        width: 32px;
-                        height: 32px;
-                        left: 20px;
-                    }
-
-                    .codeBtn {
-                        width: 142px;
-                        height: 32px;
-                        @include footerBtn;
-                        position: absolute;
-                        right: 5px;
-                        font-size: 12px;
+                        line-height: 15px;
+                        // position: absolute;
+                        // left: 15px;
+                        // top: 42px;
                     }
                 }
             }
